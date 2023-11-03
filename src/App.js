@@ -13,16 +13,14 @@ import Navbar from './components/Navbar/navbar';
 export default function App(props) {
     return (
       <div>
-        <Router>
-          <div>
-            <Navbar>
+        <Routes>
+          <Route path="/" element={<Navbar/>}>
               <Route path="/" element={<Home/>} />
               <Route path="/Compare" element={<Compare/>} />
               <Route path="/Quiz" element={<Quiz/>} />
               <Route path="/Search" element={<Search/>} />
-            </Navbar>
-          </div>
-        </Router> 
+          </Route>
+        </Routes> 
       </div>
     );
   }
