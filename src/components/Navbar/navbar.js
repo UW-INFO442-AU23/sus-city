@@ -4,9 +4,9 @@ import { Outlet, Link } from "react-router-dom";
 function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="nav-bar navbar navbar-expand-xl navbar-dark">
         <div className="container">
-          <Link to="/" className="navbar-brand"><img src="logo.png" alt="X scape logo"/></Link>
+          <Link to="/" className="web-logo navbar-brand"><img src="logo.png" alt="X scape logo"/></Link>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
