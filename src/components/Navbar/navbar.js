@@ -4,8 +4,8 @@ import { Outlet, Link } from "react-router-dom";
 function Navbar() {
   return (
     <div>
-      <nav className="nav-bar navbar navbar-expand-xl navbar-dark">
-        <div className="container">
+      <nav className="nav-bar fixed-top navbar navbar-expand-sm navbar-dark">
+        <div className="container-fluid">
           <Link to="/" className="web-logo navbar-brand"><img src="logo.png" alt="X scape logo"/></Link>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
@@ -23,8 +23,6 @@ function Navbar() {
               </li>
             </ul>
           </div>
-
-          
         </div>
       </nav>
 

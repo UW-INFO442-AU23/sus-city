@@ -11,10 +11,13 @@ footer {
 
 .nav-bar {
     background-color:#191f0c;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+
 }
 
-.web-logo {
-    margin-left: none;
+.nav-item {
+  font-size: 20px;
 }
 
 .homepage {
@@ -415,7 +418,7 @@ footer {
     height: 37px;
     left: 0;
     position: absolute;
-    top: 570px;
+    top: 500px;
     width: 168px;
   }
   
@@ -423,11 +426,11 @@ footer {
     border: 2px solid;
     border-color: #ffffff;
     border-radius: 44px;
-    height: 37px;
+    height: 38px;
     left: 0;
     position: absolute;
     top: 0;
-    width: 160px;
+    width: 168px;
   }
   
   .homepage .text-wrapper-15 {
@@ -447,7 +450,7 @@ footer {
     background-color: #d7f379;
     border-radius: 18.5px;
     height: 37px;
-    left: 131px;
+    left: 130px;
     position: absolute;
     top: 0;
     width: 37px;

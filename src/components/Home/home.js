@@ -98,14 +98,16 @@ export default function Home(props) {
             </div>
             <p className="text-wrapper-14">Your Guide to Sustainable Transportation Solutions for a Greener Future.</p>
             <div className="overlap-3">
-              <div className="rectangle" />
-              <div className="text-wrapper-15">Learn More</div>
-              <div className="ellipse" />
-              <div className="group-2">
-                <div className="rectangle-2" />
-                <div className="rectangle-3" />
-                <div className="rectangle-4" />
-              </div>
+              <button>
+                <div className="rectangle" />
+                <div className="text-wrapper-15">Learn More</div>
+                <div className="ellipse" />
+                <div className="group-2">
+                  <div className="rectangle-2" />
+                  <div className="rectangle-3" />
+                  <div className="rectangle-4" />
+                </div>
+              </button>
             </div>
           </div>
         </div>
