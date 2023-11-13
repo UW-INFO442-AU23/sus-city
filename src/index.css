@@ -357,6 +357,10 @@ footer {
     top: 2247px;
     width: 556px;
   }
+
+  .homepage .video {
+    top: 3000px;
+  }
   
   .homepage .why-buy-a-fuel {
     color: #d7f379;
@@ -524,40 +528,8 @@ footer {
   color: #D5E37C;
   font-family: "Rubik", Helvetica;
   font-size: 50px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   text-align: center;
-}
-
-.compare .compare-button-text {
-  width: 304px;
-  color: #666;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  vertical-align: middle;
-}
-
-.compare .dropdown {
-  display: flex;
-  width: 350px;
-  padding: 6px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 8px;
-  border: 1px solid #CCC;
-  background: var(--esds-spec-background, #FFF);
-}
-
-.compare .row {
-  display: flex;
-  justify-content: center;
-}
-
-.compare .col {
-  margin: 0 10px;
 }
 
 .compare-label {
@@ -607,4 +579,42 @@ footer {
 
 .mission-blurbing-text {
   margin: 0;
+}
+
+.compare .dropdown button {
+  background-color: #fff;
+}
+
+.compare .dropdown button,
+.compare .dropdown a.dropdown-item {
+  color: #666;
+}
+
+.compare .btn-secondary {
+  background-color: #d7f379;
+  color: #666;
+}
+
+.compare .table-bordered {
+  background-color: #fff;
+}
+
+.compare-table {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  background-color: #191f0c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+.search .main-header {
+  margin-top: 5rem;
+  color: #d7f379;
 }
