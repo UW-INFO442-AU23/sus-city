@@ -549,6 +549,11 @@ footer {
   color: #666;
 }
 
+.compare .btn-secondary {
+  background-color: #d7f379;
+  color: #666;
+}
+
 
 .search {
   background-color: #191f0c;

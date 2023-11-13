@@ -26,6 +26,7 @@ export default function Compare(props) {
                             <li><a class="dropdown-item" href="#">Car #3</a></li>
                         </ul>
                     </div>
+                    <button type="button" class="btn btn-secondary">Apply Search</button>
                 </div>
             </div>
         </div>
