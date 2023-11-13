@@ -357,6 +357,10 @@ footer {
     top: 2247px;
     width: 556px;
   }
+
+  .homepage .video {
+    top: 3000px;
+  }
   
   .homepage .why-buy-a-fuel {
     color: #d7f379;

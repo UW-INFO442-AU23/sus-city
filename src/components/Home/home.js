@@ -117,18 +117,14 @@ export default function Home(props) {
               the entire planet.
             </p>
             <p className="text-wrapper-11">
-              Purchasing a fuel-efficient or electric car is a smart choice for
-              several reasons. Firstly, these vehicles significantly reduce
-              carbon emissions, contributing to a cleaner environment and
-              helping combat climate change. Fuel-efficient cars consume less
-              gasoline, saving you money on fuel costs and reducing your carbon
-              footprint. Electric cars, in particular, produce zero tailpipe
-              emissions, making them an excellent choice for
-              environmentally-conscious individuals. By choosing a
-              fuel-efficient or electric car, you not only reduce your personal
-              impact on the environment but also enjoy economic and
-              environmental benefits that can positively impact your daily life.
+              Purchasing a fuel-efficient or electric car offers environmental and 
+              economic benefits which lead to personal and environmental advantages.
+              For more detailed information, consider watching a related video.
+
+              <iframe className="video mt-5" width="560" height="315" src="https://www.youtube.com/embed/J0tgtWbODXk?si=d24GCSgG9AKNJGZu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </p>
+            
+            
           </div>
           <p className="why-buy-a-fuel">
             Why buy a Fuel-
