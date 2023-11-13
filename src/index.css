@@ -609,12 +609,77 @@ footer {
   background-color: #191f0c;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
   padding-left: 10rem;
   padding-right: 10rem;
+  min-height: 100vh;
 }
 .search .main-header {
   margin-top: 5rem;
   color: #d7f379;
+}
+
+.search .matched-cars {
+  color: #ffffff;
+}
+
+.search .filter-search {
+  display: flex;
+  min-height: 100vh;
+}
+
+.search .filter-form {
+  background-color: #ffffff;
+  flex: 1; 
+  border-radius: 10px;
+}
+
+.search .search-results-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  flex: 3; 
+}
+
+.search .matched-cars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+  padding: 20px 0px;
+}
+
+.search .car-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.search .car-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.search .card-content {
+  padding: 15px;
+  text-align: center;
+  color: #5A6B33
+}
+
+
+
+.search .search-button {
+  background-color: #D5E37C;
+  color: #5A6B33;
+}
+
+.search .info-btn {
+  background-color: #D5E37C;
+  color: #5A6B33;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
 }

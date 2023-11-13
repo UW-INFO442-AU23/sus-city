@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate, Switch } from "react-router-dom";
+import _ from 'lodash';
 
 // import all components pages
 import Compare from "./components/Compare/compare";
@@ -12,6 +13,7 @@ import About from './components/About/about';
 
 
 export default function App(props) {
+    let cars = props.cars;
     return (
       <div>
         <Routes>
@@ -19,7 +21,7 @@ export default function App(props) {
               <Route path="/" element={<Home/>} />
               <Route path="/Compare" element={<Compare/>} />
               <Route path="/Quiz" element={<Quiz/>} />
-              <Route path="/Search" element={<Search/>} />
+              <Route path="/Search" element={<Search cars={cars}/>} />
               <Route path="/About" element={<About/>} />
           </Route>
         </Routes> 
