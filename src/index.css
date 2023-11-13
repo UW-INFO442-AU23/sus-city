@@ -567,3 +567,17 @@ footer {
   margin-top: 1rem;
   gap: 10px;
 }
+
+
+
+.search {
+  background-color: #191f0c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.search .main-header {
+  margin-top: 5rem;
+  color: #d7f379;
+}
