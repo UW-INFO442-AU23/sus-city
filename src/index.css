@@ -567,3 +567,44 @@ footer {
   margin-top: 1rem;
   gap: 10px;
 }
+
+
+.about-content { /** need this to make sure the content of page doesn't start/hide behind nav bar **/
+  padding-top: 70px;
+  background-color: #191f0c;
+}
+
+.mission-container {
+  text-align: right;
+  /* right: 50px; */
+}
+
+.mission-heading {
+  color: #D5E37C;
+  font-family: "Rubik", Helvetica;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  padding-right: 50px;
+  line-height: normal;
+  /* text-align: right; */
+}
+
+.mission-blurbing {
+  color: #ffffff;
+  font-family: "Rubik", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  width: 197px;
+
+  margin-left: 50px;
+  padding-left: 1150px;
+
+  /* right: 231px;
+  letter-spacing: 0;
+  line-height: normal; */
+}
+
+.mission-blurbing-text {
+  margin: 0;
+}
