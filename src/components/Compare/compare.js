@@ -28,6 +28,36 @@ export default function Compare(props) {
                     </div>
                     <button type="button" class="btn btn-secondary">Apply Search</button>
                 </div>
+                <div className="compare-table">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                            <th scope="row">Model</th>
+                            <th scope="row">Features</th>
+                            <th scope="row">Classification</th>
+                            <th scope="row">Drive Type</th>
+                            <th scope="row">Carbon Emissions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="col">Model name</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+                            <tr>                                
+                            <th scope="col">Model name</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+               
             </div>
         </div>
     )

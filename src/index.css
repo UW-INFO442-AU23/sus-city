@@ -554,6 +554,15 @@ footer {
   color: #666;
 }
 
+.compare .table-bordered {
+  background-color: #fff;
+}
+
+.compare-table {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
 
 .search {
   background-color: #191f0c;
