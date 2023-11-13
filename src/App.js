@@ -8,6 +8,7 @@ import Home from "./components/Home/home";
 import Quiz from "./components/Quiz/quiz";
 import Search from "./components/Search/search";
 import Navbar from './components/Navbar/navbar';
+import About from './components/About/about';
 
 
 export default function App(props) {
@@ -19,6 +20,7 @@ export default function App(props) {
               <Route path="/Compare" element={<Compare/>} />
               <Route path="/Quiz" element={<Quiz/>} />
               <Route path="/Search" element={<Search/>} />
+              <Route path="/About" element={<About/>} />
           </Route>
         </Routes> 
       </div>

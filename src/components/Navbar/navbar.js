@@ -46,6 +46,11 @@ function Navbar() {
                   Compare
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link to="/About" className="nav-link">
+                  About
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
