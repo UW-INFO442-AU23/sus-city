@@ -25,7 +25,7 @@ Our group’s primary focus among the United Nations Sustainable Development Goa
 Built with:
 - React JS
 - Bootstrap
-- HTML, CSS, JaveScript
+- HTML, CSS, JavaScript
 
 ## Testing Protocols
 
