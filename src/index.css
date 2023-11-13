@@ -528,40 +528,8 @@ footer {
   color: #D5E37C;
   font-family: "Rubik", Helvetica;
   font-size: 50px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   text-align: center;
-}
-
-.compare .compare-button-text {
-  width: 304px;
-  color: #666;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  vertical-align: middle;
-}
-
-.compare .dropdown {
-  display: flex;
-  width: 350px;
-  padding: 6px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 8px;
-  border: 1px solid #CCC;
-  background: var(--esds-spec-background, #FFF);
-}
-
-.compare .row {
-  display: flex;
-  justify-content: center;
-}
-
-.compare .col {
-  margin: 0 10px;
 }
 
 .compare-label {
@@ -572,6 +540,14 @@ footer {
   gap: 10px;
 }
 
+.compare .dropdown button {
+  background-color: #fff;
+}
+
+.compare .dropdown button,
+.compare .dropdown a.dropdown-item {
+  color: #666;
+}
 
 
 .search {
