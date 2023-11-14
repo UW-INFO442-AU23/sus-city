@@ -1,30 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Form } from 'react-bootstrap';
 
 export default function Compare(props) {
+    const [car1, setCar1] = useState(""); 
+    const [car2, setCar2] = useState("");
+    const [comparisonResult, setComparisonResult] = useState([]);
+    let cars = props.cars;
+
+    const carOptions = cars
+        .sort((a, b) => a.title.localeCompare(b.title))
+        .map((car) => (
+        <option key={car.title} value={car.title}>
+            {car.title}
+        </option>
+        ));
+
     return (
         <div className="compare">
             <div className="content">
                 <div className="compare-heading">Compare</div>
                 <div className="row compare-label">
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Select first car
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Car #1</a></li>
-                            <li><a class="dropdown-item" href="#">Car #2</a></li>
-                            <li><a class="dropdown-item" href="#">Car #3</a></li>
-                        </ul>
+                        <Form.Select
+                            id="car1"
+                            name="car1"
+                            className="compare-input-field"
+                            placeholder="Search first car" 
+                            value={car1}
+                            onChange={(e) => setCar1(e.target.value)} 
+                        >
+                            <option value="">Select first car</option>
+                            {carOptions}
+                        </Form.Select>
                     </div>
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Select second car
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Car #1</a></li>
-                            <li><a class="dropdown-item" href="#">Car #2</a></li>
-                            <li><a class="dropdown-item" href="#">Car #3</a></li>
-                        </ul>
+                        <Form.Select
+                            id="car2"
+                            name="car2"
+                            className="compare-input-field"
+                            placeholder="Search second car" 
+                            value={car2}
+                            onChange={(e) => setCar2(e.target.value)}
+                        >
+                            <option value="">Select second car</option>
+                            {carOptions}
+                        </Form.Select>
                     </div>
                     <button type="button" class="btn btn-secondary">Apply Search</button>
                 </div>

@@ -19,7 +19,7 @@ export default function App(props) {
         <Routes>
           <Route path="/" element={<Navbar/>}>
               <Route path="/" element={<Home/>} />
-              <Route path="/Compare" element={<Compare/>} />
+              <Route path="/Compare" element={<Compare cars={cars}/>} />
               <Route path="/Quiz" element={<Quiz/>} />
               <Route path="/Search" element={<Search cars={cars}/>} />
               <Route path="/About" element={<About/>} />
