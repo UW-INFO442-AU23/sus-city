@@ -30,29 +30,31 @@ export default function Compare(props) {
                 </div>
                 <div className="compare-table">
                     <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                            <th scope="row">Model</th>
-                            <th scope="row">Features</th>
-                            <th scope="row">Classification</th>
-                            <th scope="row">Drive Type</th>
-                            <th scope="row">Carbon Emissions</th>
-                            </tr>
-                        </thead>
                         <tbody>
                             <tr>
-                            <th scope="col">Model name</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                                <th scope="row">Model</th>
+                                <td>Model name 1</td>
+                                <td>Model name 2</td>  
                             </tr>
-                            <tr>                                
-                            <th scope="col">Model name</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <tr>
+                                <th scope="row">Features</th>
+                                <td>Features 1</td>
+                                <td>Features 2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Classification</th>
+                                <td>Classification 1</td>
+                                <td>Classification 2</td>  
+                            </tr>
+                            <tr>
+                                <th scope="row">Drive Type</th>
+                                <td>Drive Type 1</td>
+                                <td>Drive Type 2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Carbon Emissions</th>
+                                <td>CO2 Emissions 1</td>
+                                <td>CO2 Emissions 2</td>
                             </tr>
                         </tbody>
                     </table>

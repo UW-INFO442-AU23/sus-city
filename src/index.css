@@ -519,6 +519,8 @@ footer {
     width: 1512px;
   }
 
+/** start of content css **/
+
 .content { /** need this to make sure the content of page doesn't start/hide behind nav bar **/
   padding-top: 70px;
   background-color: #191f0c;
@@ -540,6 +542,41 @@ footer {
   gap: 10px;
 }
 
+.compare .dropdown button {
+  background-color: #fff;
+}
+
+.compare .dropdown button,
+.compare .dropdown a.dropdown-item {
+  color: #666;
+}
+
+.compare .btn-secondary {
+  background-color: #d7f379;
+  color: #666;
+}
+
+.compare .table-bordered {
+  background-color: #fff;
+}
+
+.compare-table {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  max-width: 1000px;
+  width: 100%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.compare-table th:nth-child(1),
+.compare-table td:nth-child(1) {
+  background-color: #d7f379;
+}
+
+/** end of content css + start of about css **/
 
 .about-content { /** need this to make sure the content of page doesn't start/hide behind nav bar **/
   padding-top: 70px;
@@ -579,30 +616,6 @@ footer {
 
 .mission-blurbing-text {
   margin: 0;
-}
-
-.compare .dropdown button {
-  background-color: #fff;
-}
-
-.compare .dropdown button,
-.compare .dropdown a.dropdown-item {
-  color: #666;
-}
-
-.compare .btn-secondary {
-  background-color: #d7f379;
-  color: #666;
-}
-
-.compare .table-bordered {
-  background-color: #fff;
-}
-
-.compare-table {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
 }
 
 .search {
