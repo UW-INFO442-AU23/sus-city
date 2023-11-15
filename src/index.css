@@ -573,6 +573,17 @@ footer {
 .compare-table th:nth-child(1),
 .compare-table td:nth-child(1) {
   background-color: #d7f379;
+  width: 15rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.compare-table th:nth-child(2),
+.compare-table td:nth-child(2),
+.compare-table th:nth-child(3),
+.compare-table td:nth-child(3) {
+  width: 15rem;
+  max-width: 15rem;
 }
 
 .form-select {
@@ -583,6 +594,14 @@ footer {
   padding: 0.5rem;
   width: 100%;
 }
+
+.model-image {
+  max-width: 300px; 
+  max-height: 100px;
+  margin-bottom: 8px;
+}
+
+
 
 
 /** end of content css + start of about css **/

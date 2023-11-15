@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 
 export default function Compare(props) {
     const [car1, setCar1] = useState(""); 
@@ -14,6 +14,31 @@ export default function Compare(props) {
             {car.title}
         </option>
         ));
+
+    const handleCompare = () => {
+        const filteredCars1 = cars.find(car => car.title.toLowerCase() === car1.toLowerCase());
+        const filteredCars2 = cars.find(car => car.title.toLowerCase() === car2.toLowerCase());
+    
+        if (filteredCars1 && filteredCars2) {
+            const comparedData = [
+                {
+                    property: 'Model',
+                    car1: filteredCars1.title,
+                    car2: filteredCars2.title,
+                    image1: filteredCars1.image, 
+                    image2: filteredCars2.image
+                },
+                { property: 'Classification', car1: filteredCars1.car_type, car2: filteredCars2.car_type },
+                { property: 'Drive Type', car1: filteredCars1.drive, car2: filteredCars2.drive },
+                { property: 'Carbon Emissions', car1: filteredCars1.co2_emission, car2: filteredCars2.co2_emission }
+            ];
+            setComparisonResult(comparedData);
+        } else {
+            setComparisonResult([]);
+        }
+    };
+
+
 
     return (
         <div className="compare">
@@ -46,36 +71,38 @@ export default function Compare(props) {
                             {carOptions}
                         </Form.Select>
                     </div>
-                    <button type="button" class="btn btn-secondary">Apply Search</button>
+                    
+                    <Button variant="secondary" className="compare-button btn-secondary" onClick={handleCompare}>
+                        Apply Search
+                    </Button>
                 </div>
                 <div className="compare-table">
                     <table class="table table-bordered">
                         <tbody>
-                            <tr>
-                                <th scope="row">Model</th>
-                                <td>Model name 1</td>
-                                <td>Model name 2</td>  
-                            </tr>
-                            <tr>
-                                <th scope="row">Features</th>
-                                <td>Features 1</td>
-                                <td>Features 2</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Classification</th>
-                                <td>Classification 1</td>
-                                <td>Classification 2</td>  
-                            </tr>
-                            <tr>
-                                <th scope="row">Drive Type</th>
-                                <td>Drive Type 1</td>
-                                <td>Drive Type 2</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Carbon Emissions</th>
-                                <td>CO2 Emissions 1</td>
-                                <td>CO2 Emissions 2</td>
-                            </tr>
+                            {comparisonResult.map((row, index) => (
+                                <tr key={index}>
+                                    <th scope="row">{row.property}</th>
+                                    {row.property === 'Model' ? (
+                                        <>
+                                            <td colSpan="2">
+                                                {row.image1 && <img src={row.image1} alt={`${row.car1} Image`} className="model-image" />}
+                                                <br />
+                                                {row.car1}
+                                            </td>
+                                            <td colSpan="2"> 
+                                                {row.image2 && <img src={row.image2} alt={`${row.car2} Image`} className="model-image" />}
+                                                <br />
+                                                {row.car2}
+                                            </td>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <td colSpan="2">{row.car1}</td>
+                                            <td colSpan="2">{row.car2}</td>
+                                        </>
+                                    )}
+                                </tr>
+                            ))}
                         </tbody>
                     </table>
                 </div>
