@@ -669,6 +669,15 @@ footer {
   min-height: 100vh;
 }
 
+.search .clear-filters-btn {
+  color: #191f0c;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 158px;
+  cursor: pointer;
+}
+
 .search .filter-form {
   background-color: #ffffff;
   flex: 1; 
@@ -704,11 +713,27 @@ footer {
 
 .search .card-content {
   padding: 15px;
+}
+
+.search .card-title {
   text-align: center;
   color: #5A6B33
 }
 
+.search .card-info {
+  color:#000000
+}
 
+.search .tag {
+  display: inline-block; 
+  background-color: #D5E37C; 
+  padding: 5px 10px;
+  margin-bottom: 5px; 
+  margin-right: 5px;
+  border-radius: 5px; 
+  font-size: 0.8em; 
+  color: #333; 
+}
 
 .search .search-button {
   background-color: #D5E37C;
