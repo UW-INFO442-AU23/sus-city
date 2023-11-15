@@ -28,6 +28,7 @@ export default function Compare(props) {
                     image1: filteredCars1.image, 
                     image2: filteredCars2.image
                 },
+                { property: 'Price', car1: filteredCars1.price, car2: filteredCars2.price },
                 { property: 'Classification', car1: filteredCars1.car_type, car2: filteredCars2.car_type },
                 { property: 'Drive Type', car1: filteredCars1.drive, car2: filteredCars2.drive },
                 { property: 'Carbon Emissions', car1: filteredCars1.co2_emission, car2: filteredCars2.co2_emission }
