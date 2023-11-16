@@ -547,11 +547,12 @@ footer {
 }
 
 
-.compare .btn-secondary {
+.compare .compare-button {
   background-color: #d7f379;
   color: #666;
   border-radius: 0.375rem;
-  padding: 0.41rem 1rem;
+  padding: 0.43rem 1rem;
+  border: none;
 }
 
 .compare .table-bordered {
@@ -601,7 +602,13 @@ footer {
   margin-bottom: 8px;
 }
 
-
+.compare .clear-button {
+  background-color: #d6d6d6;
+  color: #666;
+  border-radius: 0.375rem;
+  padding: 0.43rem 1rem;
+  border: none;
+}
 
 
 /** end of content css + start of about css **/

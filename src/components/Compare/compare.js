@@ -46,6 +46,12 @@ export default function Compare(props) {
         }
     };
 
+    const handleClear = () => {
+        setCar1([]);
+        setCar2([]);
+        setComparisonResult([]);
+    };
+
     return (
         <div className="compare">
             <div className="content">
@@ -77,9 +83,12 @@ export default function Compare(props) {
                             {carOptions}
                         </Form.Select>
                     </div>
-                    
-                    <Button variant="secondary" className="compare-button btn-secondary" onClick={handleCompare}>
+                
+                    <Button variant="secondary" className="compare-button" onClick={handleCompare}>
                         Apply Search
+                    </Button>
+                    <Button variant="secondary" className="clear-button" onClick={handleClear}>
+                        Clear Filters
                     </Button>
                 </div>
                 <div className="compare-table">
