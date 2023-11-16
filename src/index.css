@@ -610,6 +610,13 @@ footer {
   border: none;
 }
 
+.compare .select-cars-message {
+  background-color: #d2d2d2;
+  color: #8f8f8f;
+  padding: 14rem 25rem;
+  font-size: 25pt;
+  white-space: nowrap;
+}
 
 /** end of content css + start of about css **/
 

@@ -5,6 +5,7 @@ export default function Compare(props) {
     const [car1, setCar1] = useState(""); 
     const [car2, setCar2] = useState("");
     const [comparisonResult, setComparisonResult] = useState([]);
+    const [showSelectCarsMessage, setShowSelectCarsMessage] = useState(true);
     let cars = props.cars;
 
     const carOptions = cars
@@ -20,10 +21,17 @@ export default function Compare(props) {
     };
 
     const handleCompare = () => {
+        if (!car1 || !car2) {
+            setShowSelectCarsMessage(true);
+            setComparisonResult([]);
+            return;
+        }
+
         const filteredCars1 = cars.find(car => car.title.toLowerCase() === car1.toLowerCase());
         const filteredCars2 = cars.find(car => car.title.toLowerCase() === car2.toLowerCase());
     
         if (filteredCars1 && filteredCars2) {
+            setShowSelectCarsMessage(false);
             const comparedData = [
                 {
                     property: 'Model',
@@ -42,6 +50,7 @@ export default function Compare(props) {
             ];
             setComparisonResult(comparedData);
         } else {
+            setShowSelectCarsMessage(false);
             setComparisonResult([]);
         }
     };
@@ -50,7 +59,9 @@ export default function Compare(props) {
         setCar1([]);
         setCar2([]);
         setComparisonResult([]);
+        setShowSelectCarsMessage(true);
     };
+
 
     return (
         <div className="compare">
@@ -92,6 +103,11 @@ export default function Compare(props) {
                     </Button>
                 </div>
                 <div className="compare-table">
+                    {showSelectCarsMessage ? (
+                        <div className="select-cars-message">
+                            Select two cars to generate table.
+                        </div>
+                    ) : (
                     <table class="table table-bordered">
                         <tbody>
                             {comparisonResult.map((row, index) => (
@@ -120,6 +136,7 @@ export default function Compare(props) {
                             ))}
                         </tbody>
                     </table>
+                    )}
                 </div>
                
             </div>
