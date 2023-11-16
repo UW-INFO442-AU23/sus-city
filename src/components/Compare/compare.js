@@ -15,6 +15,10 @@ export default function Compare(props) {
         </option>
         ));
 
+    const handleBoolean = (value) => {
+        return value === "TRUE" ? <span className="text-success">&#10003;</span> : value === "FALSE" ? <span className="text-danger">&#10007;</span> : null;
+    };
+
     const handleCompare = () => {
         const filteredCars1 = cars.find(car => car.title.toLowerCase() === car1.toLowerCase());
         const filteredCars2 = cars.find(car => car.title.toLowerCase() === car2.toLowerCase());
@@ -31,15 +35,16 @@ export default function Compare(props) {
                 { property: 'Price', car1: filteredCars1.price, car2: filteredCars2.price },
                 { property: 'Classification', car1: filteredCars1.car_type, car2: filteredCars2.car_type },
                 { property: 'Drive Type', car1: filteredCars1.drive, car2: filteredCars2.drive },
-                { property: 'Carbon Emissions', car1: filteredCars1.co2_emission, car2: filteredCars2.co2_emission }
+                { property: 'Carbon Emissions', car1: filteredCars1.co2_emission, car2: filteredCars2.co2_emission },
+                { property: 'Apple CarPlay', car1: handleBoolean(filteredCars1.apple_carplay), car2: handleBoolean(filteredCars2.apple_carplay) },
+                { property: 'Keyless Entry', car1: handleBoolean(filteredCars1.keyless_entry), car2: handleBoolean(filteredCars2.keyless_entry) },
+                { property: 'Dynamic Cruise Control', car1: handleBoolean(filteredCars1.dynamic_cruise_control), car2: handleBoolean(filteredCars2.dynamic_cruise_control) }
             ];
             setComparisonResult(comparedData);
         } else {
             setComparisonResult([]);
         }
     };
-
-
 
     return (
         <div className="compare">

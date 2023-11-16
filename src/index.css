@@ -706,9 +706,11 @@ footer {
 }
 
 .search .car-card img {
-  width: 100%;
+  width: 225px;
+  padding-top: 1rem;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 .search .card-content {

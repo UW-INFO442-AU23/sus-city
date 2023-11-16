@@ -229,7 +229,7 @@ export default function Search(props) {
           <div className="matched-cars">
             {filteredCars.map((car) => (
               <div className="car-card" key={car.title}>
-                <img src={car.image} alt={car.title} />
+                <img src={car.image} alt={car.title}/>
                 <div className="card-content">
                   <h5 className="card-title">{car.title}</h5>
                   <div className="tag">{car.car_type}</div>
