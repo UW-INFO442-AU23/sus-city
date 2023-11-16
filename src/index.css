@@ -674,8 +674,12 @@ footer {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  margin-left: 158px;
+  margin-left: 100px;
   cursor: pointer;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  float: right;
 }
 
 .search .filter-form {
