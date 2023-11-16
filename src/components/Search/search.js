@@ -240,7 +240,7 @@ export default function Search(props) {
                   {car.dynamic_cruise_control === "TRUE" && <div className="tag"> Dynamic Cruise</div>}
                   <div className="card-info border-top border-bottom">
 
-                    <p>Drive: {car.drive}</p>
+                    <p className="card-description">Drive: {car.drive}</p>
                     <p>Size: {car.vehicle_size_class}</p>
                     <p>CO2 Emission: {car.co2_emission}</p>
                   </div>
@@ -250,7 +250,7 @@ export default function Search(props) {
                     rel="noopener noreferrer"
                     className="info-btn"
                   >
-                    More Info
+                    Visit Website
                   </a>
                 </div>
               </div>
