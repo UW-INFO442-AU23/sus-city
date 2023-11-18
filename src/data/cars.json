@@ -20,7 +20,7 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "FALSE",
-        "price": "$$$",
+        "price": "26,500.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/52286/2023-Chevrolet-Bolt%20EV-front_52286_032_1879x927_G7X_cropped.png"
     },
     {
@@ -44,11 +44,11 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$$",
+        "price": "57,100.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/51577/2023-BMW-i4-front_51577_032_1774x748_C4W_cropped.png"
     },
     {
-        "title": "2023 Tesla Model 3 RWD",
+        "title": "2023 Tesla Model 3 ",
         "year": "2023",
         "external_link": "https://www.tesla.com/model3",
         "make": "Tesla",
@@ -68,11 +68,11 @@
         "apple_carplay": "FALSE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$$",
+        "price": "38,990.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/52220/2023-Tesla-Model%203-front_52220_032_1824x741_PPMR_cropped.png"
     },
     {
-        "title": "2023 Tesla Model Y Long Range AWD",
+        "title": "2023 Tesla Model Y Long Range",
         "year": "2023",
         "external_link": "https://www.tesla.com/modely",
         "make": "Tesla",
@@ -92,7 +92,7 @@
         "apple_carplay": "FALSE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$$",
+        "price": "48,990.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/52157/2023-Tesla-Model%20Y-front_52157_032_1854x815_PPMR_cropped.png"
     },
     {
@@ -116,7 +116,7 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$",
+        "price": "28,040.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/14329/2023-Nissan-LEAF-front_14329_032_1845x830_QAK_cropped.png"
     },
     {
@@ -140,11 +140,11 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$$",
+        "price": "49,800.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/51524/2023-Audi-Q4%20e-tron-front_51524_032_1834x842_0E0E_cropped.png"
     },
     {
-        "title": "2023 Lexus RZ 450e AWD",
+        "title": "2023 Lexus RZ 450e ",
         "year": "2023",
         "external_link": "https://www.lexus.com/models/RZ",
         "make": "Lexus",
@@ -164,11 +164,11 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "FALSE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$$",
+        "price": "58,500.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/47271/2023-Lexus-RZ-front_47271_032_1834x787_1L2_cropped.png"
     },
     {
-        "title": "2023 Hyundai Ioniq 6 Long range AWD",
+        "title": "2023 Hyundai Ioniq 6 Long range",
         "year": "2023",
         "external_link": "https://www.hyundaiusa.com/us/en/vehicles/ioniq-6",
         "make": "Hyundai",
@@ -188,11 +188,11 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$$",
+        "price": "41,600.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/53284/2023-Hyundai-IONIQ%206-front_53284_032_1839x754_A2B_cropped.png"
     },
     {
-        "title": "2023 Polestar 2 Dual Motor Perf Pack",
+        "title": "2023 Polestar 2 Dual Motor",
         "year": "2023",
         "external_link": "https://www.polestar.com/us/polestar-2/",
         "make": "Polestar",
@@ -212,7 +212,7 @@
         "apple_carplay": "FALSE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$$",
+        "price": "45,900.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/52680/2023-Polestar-2-front_52680_032_1846x780_729_cropped.png"
     },
     {
@@ -236,7 +236,7 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$$",
+        "price": "38,995.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/53283/2023-Volkswagen-ID.4-front_53283_032_1828x839_3R3R_cropped.png"
     },
     {
@@ -260,11 +260,11 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$",
+        "price": "28,545.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/52682/2023-Toyota-Prius-front_52682_032_1848x750_1L0_cropped.png"
     },
     {
-        "title": "2023 Lexus NX 450h Plus AWD",
+        "title": "2023 Lexus NX 450h Plus",
         "year": "2023",
         "external_link": "https://www.lexus.com/models/NX-PHEV",
         "make": "Lexus",
@@ -284,7 +284,7 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$$",
+        "price": "57,805.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/51949/2023-Lexus-NX-front_51949_032_1853x861_8Y6_cropped.png"
     },
     {
@@ -308,11 +308,11 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$",
+        "price": "26,590.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/51925/2023-Kia-Niro-front_51925_032_1885x850_DRG_cropped.png"
     },
     {
-        "title": "2023 MINI Cooper SE Countryman All4",
+        "title": "2023 MINI Cooper SE Countryman",
         "year": "2023",
         "external_link": "https://www.miniusa.com/model/countrymanhybrid.html",
         "make": "MINI",
@@ -332,7 +332,7 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$$",
+        "price": "41,500.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/15353/2023-MINI-Countryman-front_15353_032_2034x906_C3Y_cropped.png"
     },
     {
@@ -356,11 +356,11 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$$",
+        "price": "42,410.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/15267/2023-Hyundai-Santa%20Fe%20Plug-in%20Hybrid-front_15267_032_1825x858_S3B_cropped.png"
     },
     {
-        "title": "2023 Toyota RAV4 Prime 4WD",
+        "title": "2023 Toyota RAV4 Prime ",
         "year": "2023",
         "external_link": "https://www.toyota.com/rav4prime/",
         "make": "Toyota",
@@ -380,11 +380,11 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$$",
+        "price": "43,090.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/14904/2023-Toyota-RAV4%20Prime-front_14904_032_1835x895_1D6_cropped.png"
     },
     {
-        "title": "2023 Subaru Crosstrek Hybrid AWD",
+        "title": "2023 Subaru Crosstrek Hybrid ",
         "year": "2023",
         "external_link": "https://www.subaru.com/vehicles/crosstrek/hybrid.html/",
         "make": "Subaru",
@@ -404,7 +404,7 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$",
+        "price": "36,845.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/14425/2023-Subaru-Crosstrek-front_14425_032_1836x862_K1X_cropped.png"
     },
     {
@@ -428,7 +428,7 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$$",
+        "price": "44,200.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/14708/2023-Audi-Q5-front_14708_032_1845x859_L5L5_cropped.png"
     },
     {
@@ -452,11 +452,11 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$",
+        "price": "31,345.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/53242/2023-Honda-Accord%20Hybrid-front_53242_032_1774x722_BK_cropped.png"
     },
     {
-        "title": "2023 Volvo XC60 T8 AWD Recharge",
+        "title": "2023 Volvo XC60 T8 Recharge",
         "year": "2023",
         "external_link": "https://www.volvocars.com/us/cars/xc60-hybrid/",
         "make": "Volvo",
@@ -476,11 +476,11 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$",
+        "price": "57,200.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/51591/2023-Volvo-XC60-front_51591_032_1815x858_728_cropped.png"
     },
     {
-        "title": "2023 Nissan Rogue AWD",
+        "title": "2023 Nissan Rogue ",
         "year": "2023",
         "external_link": "https://www.nissanusa.com/vehicles/crossovers-suvs/rogue.html",
         "make": "Nissan",
@@ -500,7 +500,7 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$$",
+        "price": "27,360.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/52692/2023-Nissan-Rogue-front_52692_032_1845x875_KH3_cropped.png"
     },
     {
@@ -524,11 +524,11 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$",
+        "price": "27,295.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/52722/2023-Honda-Accord-front_52722_032_1810x721_BK_cropped.png"
     },
     {
-        "title": "2023 MINI Cooper S Hardtop 2 door",
+        "title": "2023 MINI Cooper S",
         "year": "2023",
         "external_link": "https://www.miniusa.com/model/hardtop.html",
         "make": "MINI",
@@ -548,11 +548,11 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$",
+        "price": "30,900.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/15156/2023-MINI-Hardtop%202%20Door-front_15156_032_1930x880_851_cropped.png"
     },
     {
-        "title": "2023 Honda CR-V AWD",
+        "title": "2023 Honda CR-V ",
         "year": "2023",
         "external_link": "https://automobiles.honda.com/cr-v",
         "make": "Honda",
@@ -572,11 +572,11 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$$",
+        "price": "32,500.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/52399/2023-Honda-CR-V-front_52399_032_1821x841_RN_cropped.png"
     },
     {
-        "title": "2023 Subaru Crosstrek AWD",
+        "title": "2023 Subaru Crosstrek ",
         "year": "2023",
         "external_link": "https://www.subaru.com/vehicles/crosstrek.html",
         "make": "Subaru",
@@ -596,7 +596,7 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$",
+        "price": "23,645.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/14425/2023-Subaru-Crosstrek-front_14425_032_1836x862_K1X_cropped.png"
     },
     {
@@ -620,11 +620,11 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$",
+        "price": "21,700.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/52227/2023-Toyota-Corolla-front_52227_032_1819x757_3T3_cropped.png"
     },
     {
-        "title": "2023 Mazda CX-50 4WD",
+        "title": "2023 Mazda CX-50",
         "year": "2023",
         "external_link": "https://www.mazdausa.com/vehicles/cx-50?semid=138436979927&providertag=MazdaSEM&servicetag=138436979927&k_keyword=mazada%20cx50&k_matchtype=e&gclid=Cj0KCQiAr8eqBhD3ARIsAIe-buMdWKSQTqH91OYCdv48qTsckW7FgRhO8trWWInIFwt2P35wi44CJNwaAtgAEALw_wcB&gclsrc=aw.ds",
         "make": "Mazda",
@@ -644,7 +644,7 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$",
+        "price": "27,550.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/51294/2023-MAZDA-CX-50-front_51294_032_1866x838_46V_cropped.png"
     },
     {
@@ -668,7 +668,7 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$",
+        "price": "20,950.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/51343/2023-Hyundai-Elantra-front_51343_032_1841x743_WW8_cropped.png"
     },
     {
@@ -692,7 +692,7 @@
         "apple_carplay": "FALSE",
         "keyless_entry": "FALSE",
         "dynamic_cruise_control": "FALSE",
-        "price": "$",
+        "price": "28,595.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/15057/2023-Subaru-BRZ-front_15057_032_1811x747_P8Y_cropped.png"
     },
     {
@@ -716,7 +716,7 @@
         "apple_carplay": "TRUE",
         "keyless_entry": "TRUE",
         "dynamic_cruise_control": "TRUE",
-        "price": "$$",
+        "price": "28,595.00",
         "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/52828/2023-Toyota-Camry-front_52828_032_1845x728_1J9_cropped.png"
     }
 ]

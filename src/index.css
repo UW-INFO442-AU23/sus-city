@@ -758,6 +758,7 @@ footer {
 	color: #5a6b33;
 }
 
+
 .search .info-btn {
 	background-color: #d5e37c;
 	color: #5a6b33;
@@ -767,6 +768,11 @@ footer {
 	display: inline-block;
 	margin-top: 10px;
 }
+
+.search .filter-title {
+	display: flex;
+}
+
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -781,6 +787,15 @@ input[type="radio"] {
 
 .search .card-description {
 	margin-top: 10px;
+}
+
+.search .car-price {
+	display: flex;
+	color: #30391b;
+}
+
+.search .avg-text {
+	color:#8f8f8f
 }
 
 /* About.css */

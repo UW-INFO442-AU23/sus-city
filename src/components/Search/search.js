@@ -11,9 +11,9 @@ export default function Search(props) {
   const [uniqueDrives, setUniqueDrives] = useState([]);
   const [selectedEmissions, setSelectedEmissions] = useState([]);
   const [selectedPrices, setSelectedPrices] = useState([]);
-  const [uniquePrices, setUniquePrices] = useState([]);
 
   let cars = props.cars;
+
 
   useEffect(() => {
     const makes = [...new Set(cars.map((car) => car.make))];
@@ -25,8 +25,6 @@ export default function Search(props) {
     const drives = [...new Set(cars.map((car) => car.drive))];
     setUniqueDrives(drives);
 
-    const prices = [...new Set(cars.map((car) => car.price))];
-    setUniquePrices(prices);
   }, [cars]);
 
   const handleSearchChange = (event) => {
@@ -74,6 +72,7 @@ export default function Search(props) {
   const applyFilters = () => {
     const matchedCars = props.cars.filter((car) => {
       const emission = parseInt(car.co2_emission, 10);
+      const price = parseFloat(car.price.replace(/,/g, ''));
       const isInEmissionRange = (range) => {
         switch (range) {
           case "zero":
@@ -91,13 +90,28 @@ export default function Search(props) {
         }
       };
 
+      const isInPriceRange = (category) => {
+        switch (category) {
+            case "$":
+                return price < 25000;
+            case "$$":
+                return price >= 25000 && price < 35000;
+            case "$$$":
+                return price >= 35000 && price < 50000;
+            case "$$$$":
+                return price >= 50000;
+            default:
+                return false;
+        }
+      };
+
       return (
         (selectedMake === "" || car.make === selectedMake) &&
         (selectedTypes.length === 0 || selectedTypes.includes(car.car_type)) &&
         (selectedDrives.length === 0 || selectedDrives.includes(car.drive)) &&
         (selectedEmissions.length === 0 ||
           selectedEmissions.some(isInEmissionRange)) &&
-        (selectedPrices.length === 0 || selectedPrices.includes(car.price)) &&
+        (selectedPrices.length === 0 || selectedPrices.some(isInPriceRange)) &&
         car.title.toLowerCase().includes(searchQuery.toLowerCase())
       );
     });
@@ -126,6 +140,15 @@ export default function Search(props) {
     setFilteredCars(cars);
   };
 
+  // convert the number into dollar signs to be displayed as tags
+  const getPriceCategory = (price) => {
+    const numericPrice = parseFloat(price.replace(/,/g, '')); 
+
+    if (numericPrice < 25000) return '$';
+    if (numericPrice >= 25000 && numericPrice < 35000) return '$$';
+    if (numericPrice >= 35000 && numericPrice < 50000) return '$$$';
+    return '$$$$';
+  };
 
   return (
     <div className="search">
@@ -193,8 +216,12 @@ export default function Search(props) {
             ))}
           </div>
           <div className="price-filter p-2 mx-2 border-top">
-            <h6>Filter by Price</h6>
-            {uniquePrices.map((price) => (
+            <div className="filter-title">
+              <h6>Filter by Price</h6>
+                <span class="material-symbols-outlined ml-1">info</span>
+            </div>
+
+            {["$", "$$", "$$$", "$$$$"].map((price) => (
               <div key={price}>
                 <input
                   type="checkbox"
@@ -213,7 +240,7 @@ export default function Search(props) {
               <input
                 type="text"
                 className="search-input form-control mr-2 rounded"
-                placeholder="Search Your Perfect Car"
+                placeholder="Search the keywords of makers, models..."
                 aria-label="search cars"
                 onChange={handleSearchChange}
               />
@@ -229,11 +256,15 @@ export default function Search(props) {
           <div className="matched-cars">
             {filteredCars.map((car) => (
               <div className="car-card" key={car.title}>
+                <h5 className="card-title px-3 pt-4">{car.title}</h5>
                 <img src={car.image} alt={car.title}/>
                 <div className="card-content">
-                  <h5 className="card-title">{car.title}</h5>
+                  <div className="car-price">
+                    <h5>${parseInt(car.price.replace(/,/g, '')).toLocaleString()}</h5>
+                    <p className="avg-text ml-2">Average Price</p>
+                  </div>
                   <div className="tag">{car.car_type}</div>
-                  <div className="tag">{car.price}</div>
+                  <div className="tag">{getPriceCategory(car.price)}</div>
                   <div className="tag">{car.number_of_seats} seats</div>
                   {car.apple_carplay === "TRUE" && <div className="tag"> Apple CarPlay</div>}
                   {car.keyless_entry === "TRUE" && <div className="tag"> Keyless Entry</div>}
