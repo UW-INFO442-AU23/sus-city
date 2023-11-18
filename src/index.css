@@ -1,23 +1,52 @@
-footer {
-	background-color: #191f0c;
-	background-size: cover;
-	padding-left: 3rem;
-	padding-top: 1.5rem;
-	padding-bottom: 1rem;
-	color: white;
-	width: 100%;
-	bottom: 0;
+:root {
+  --background-color: #191f0c;
+  --primary-color: #D7F379;
+  --secondary-color: #fff;
+  --third-color: #798068;
+  
+  /* Define other variables */
 }
 
+/* Footer Styles */
+.footer {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-logo img {
+  max-width: 100px; /* Adjust the size of the logo */
+}
+
+.footer-links a {
+  color: var(--secondary-color);
+  margin-right: 50px; /* Adjust the spacing between links */
+  text-decoration: none;
+}
+
+.footer-info span {
+  font-size: 14px; /* Adjust the font size of the info */
+}
+
+/* NavBar Styles */
+
 .nav-bar {
-	background-color: #191f0c;
+	background-color: var(--background-color);
 	padding-left: 3.5rem;
-	padding-right: 3.5rem;
+	padding-right: 1.5rem;
 }
 
 .nav-item {
-	font-size: 20px;
+	padding: 0px 15px;
 }
+
+.nav-bar .nav-item .nav-link.active {
+	/* Add your active link styles here */
+	color:#D7F379; /* For example, changing the text color to red */
+  }
 
 .nav-link:hover::after {
 	content: "";
@@ -25,11 +54,13 @@ footer {
 	margin: auto;
 	height: 2px; /* Height of the line */
 	width: 100%; /* Width of the line */
-	background-color: #d7f379; /* Color of the line */
+	background-color: var(--primary-color); /* Color of the line */
 }
 
+
+
 .homepage {
-	background-color: #191f0c;
+	background-color: var(--background-color);
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -37,7 +68,7 @@ footer {
 }
 
 .homepage .div {
-	background-color: #191f0c;
+	background-color: var(--background-color);
 	height: 3928px;
 	overflow: hidden;
 	position: relative;
@@ -53,7 +84,7 @@ footer {
 }
 
 .homepage .drive-reduce {
-	color: #d7f379;
+	color: var(--primary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 96px;
 	font-weight: 400;
@@ -73,7 +104,7 @@ footer {
 }
 
 .homepage .why-should-you-care {
-	color: #d7f379;
+	color: var(--primary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 64px;
 	font-weight: 400;
@@ -93,7 +124,7 @@ footer {
 }
 
 .homepage .of-all-emissions {
-	color: #ffffff;
+	color: var(--secondary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 16px;
 	font-weight: 400;
@@ -106,7 +137,7 @@ footer {
 }
 
 .homepage .text-wrapper {
-	color: #ffffff;
+	color: var(--secondary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 16px;
 	font-weight: 400;
@@ -119,7 +150,7 @@ footer {
 }
 
 .homepage .text-wrapper-2 {
-	color: #d7f379;
+	color: var(--primary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 70px;
 	font-weight: 400;
@@ -133,7 +164,7 @@ footer {
 }
 
 .homepage .text-wrapper-3 {
-	color: #d7f379;
+	color: var(--primary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 70px;
 	font-weight: 400;
@@ -172,7 +203,7 @@ footer {
 }
 
 .homepage .overlap-group-2 {
-	background-color: #d7f379;
+	background-color: var(--primary-color);
 	border-radius: 33px;
 	height: 300px;
 	position: relative;
@@ -180,7 +211,7 @@ footer {
 }
 
 .homepage .text-wrapper-4 {
-	color: #191f0c;
+	color: var(--background-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 32px;
 	font-weight: 700;
@@ -193,7 +224,7 @@ footer {
 }
 
 .homepage .p {
-	color: #191f0c;
+	color: var(--background-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 16px;
 	font-weight: 400;
@@ -230,7 +261,7 @@ footer {
 }
 
 .homepage .text-wrapper-5 {
-	color: #191f0c;
+	color: var(--background-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 32px;
 	font-weight: 700;
@@ -251,7 +282,7 @@ footer {
 }
 
 .homepage .text-wrapper-6 {
-	color: #191f0c;
+	color: var(--background-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 16px;
 	font-weight: 400;
@@ -264,7 +295,7 @@ footer {
 }
 
 .homepage .text-wrapper-7 {
-	color: #ffffff;
+	color: var(--secondary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 16px;
 	font-weight: 400;
@@ -277,7 +308,7 @@ footer {
 }
 
 .homepage .text-wrapper-8 {
-	color: #ffffff;
+	color: var(--secondary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 16px;
 	font-weight: 400;
@@ -290,7 +321,7 @@ footer {
 }
 
 .homepage .element-metric-tons {
-	color: #d7f379;
+	color: var(--primary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 70px;
 	font-weight: 400;
@@ -304,7 +335,7 @@ footer {
 }
 
 .homepage .span {
-	color: #d7f379;
+	color: var(--primary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 70px;
 	font-weight: 400;
@@ -316,7 +347,7 @@ footer {
 }
 
 .homepage .element-million {
-	color: #d7f379;
+	color: var(--primary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 70px;
 	font-weight: 400;
@@ -330,7 +361,7 @@ footer {
 }
 
 .homepage .text-wrapper-10 {
-	color: #ffffff;
+	color: var(--secondary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 20px;
 	font-weight: 400;
@@ -343,7 +374,7 @@ footer {
 }
 
 .homepage .text-wrapper-11 {
-	color: #ffffff;
+	color: var(--secondary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 20px;
 	font-weight: 400;
@@ -360,7 +391,7 @@ footer {
 }
 
 .homepage .why-buy-a-fuel {
-	color: #d7f379;
+	color: var(--primary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 64px;
 	font-weight: 400;
@@ -372,7 +403,7 @@ footer {
 }
 
 .homepage .text-wrapper-12 {
-	color: #d7f379;
+	color: var(--primary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 64px;
 	font-weight: 400;
@@ -393,7 +424,7 @@ footer {
 }
 
 .homepage .text-wrapper-13 {
-	color: #191f0c;
+	color: var(--background-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 16px;
 	font-weight: 400;
@@ -414,7 +445,7 @@ footer {
 }
 
 .homepage .text-wrapper-14 {
-	color: #ffffff;
+	color: var(--secondary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 24px;
 	font-weight: 400;
@@ -436,7 +467,7 @@ footer {
 
 .homepage .rectangle {
 	border: 2px solid;
-	border-color: #ffffff;
+	border-color: var(--secondary-color);
 	border-radius: 44px;
 	height: 38px;
 	left: 0;
@@ -446,7 +477,7 @@ footer {
 }
 
 .homepage .text-wrapper-15 {
-	color: #ffffff;
+	color: var(--secondary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 20px;
 	font-weight: 400;
@@ -459,7 +490,7 @@ footer {
 }
 
 .homepage .ellipse {
-	background-color: #d7f379;
+	background-color: var(--primary-color);
 	border-radius: 18.5px;
 	height: 37px;
 	left: 130px;
@@ -478,7 +509,7 @@ footer {
 }
 
 .homepage .rectangle-2 {
-	background-color: #30391b;
+	background-color: var(--background-color);
 	border-radius: 12px;
 	height: 3px;
 	left: 0;
@@ -488,7 +519,7 @@ footer {
 }
 
 .homepage .rectangle-3 {
-	background-color: #30391b;
+	background-color: var(--background-color);
 	border-radius: 12px;
 	height: 3px;
 	left: 8px;
@@ -499,7 +530,7 @@ footer {
 }
 
 .homepage .rectangle-4 {
-	background-color: #30391b;
+	background-color: var(--background-color);
 	border-radius: 12px;
 	height: 3px;
 	left: 8px;
@@ -510,7 +541,7 @@ footer {
 }
 
 .homepage .overlap-4 {
-	background-color: #191f0c;
+	background-color: var(--background-color);
 	height: 106px;
 	position: relative;
 	width: 1512px;
@@ -521,11 +552,11 @@ footer {
 .content {
 	/** need this to make sure the content of page doesn't start/hide behind nav bar **/
 	padding-top: 70px;
-	background-color: #191f0c;
+	background-color: var(--background-color);
 }
 
 .compare .compare-heading {
-	color: #d5e37c;
+	color: var(--primary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 50px;
 	font-weight: 400;
@@ -541,11 +572,11 @@ footer {
 }
 
 .compare .dropdown button {
-	background-color: #fff;
+	background-color: var(--secondary-color);
 }
 
 .compare .compare-button {
-	background-color: #d7f379;
+	background-color: var(--primary-color);
 	color: #666;
 	border-radius: 0.375rem;
 	padding: 0.43rem 1rem;
@@ -553,7 +584,7 @@ footer {
 }
 
 .compare .table-bordered {
-	background-color: #fff;
+	background-color: var(--secondary-color);
 }
 
 .compare-table {
@@ -570,7 +601,7 @@ footer {
 
 .compare-table th:nth-child(1),
 .compare-table td:nth-child(1) {
-	background-color: #d7f379;
+	background-color: var(--primary-color);
 	width: 15rem;
 	text-align: center;
 	vertical-align: middle;
@@ -586,7 +617,7 @@ footer {
 
 .form-select {
 	color: #666;
-	background-color: #fff;
+	background-color: var(--secondary-color);
 	border-radius: 0.375rem;
 	font-size: 1rem;
 	padding: 0.5rem;
@@ -617,49 +648,9 @@ footer {
 
 /** end of content css + start of about css **/
 
-.about-content {
-	/** need this to make sure the content of page doesn't start/hide behind nav bar **/
-	padding-top: 70px;
-	background-color: #191f0c;
-}
-
-.mission-container {
-	text-align: right;
-	/* right: 50px; */
-}
-
-.mission-heading {
-	color: #d5e37c;
-	font-family: "Rubik", Helvetica;
-	font-size: 50px;
-	font-style: normal;
-	font-weight: 400;
-	padding-right: 50px;
-	line-height: normal;
-	/* text-align: right; */
-}
-
-.mission-blurbing {
-	color: #ffffff;
-	font-family: "Rubik", Helvetica;
-	font-size: 16px;
-	font-weight: 400;
-	width: 197px;
-
-	margin-left: 50px;
-	padding-left: 1150px;
-
-	/* right: 231px;
-  letter-spacing: 0;
-  line-height: normal; */
-}
-
-.mission-blurbing-text {
-	margin: 0;
-}
 
 .search {
-	background-color: #191f0c;
+	background-color: var(--background-color);
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -669,11 +660,11 @@ footer {
 }
 .search .main-header {
 	margin-top: 5rem;
-	color: #d7f379;
+	color: var(--primary-color);
 }
 
 .search .matched-cars {
-	color: #ffffff;
+	color: var(--secondary-color);
 }
 
 .search .filter-search {
@@ -682,7 +673,8 @@ footer {
 }
 
 .search .clear-filters-btn {
-	color: #191f0c;
+	color: var(--background-color);
+	background-color: var(--primary-color);
 	padding: 10px 20px;
 	border: none;
 	border-radius: 5px;
@@ -694,11 +686,12 @@ footer {
 	float: right;
 }
 
-.search .filter-form {
-	background-color: #ffffff;
+.search .filter-form{
+	background-color: var(--secondary-color);
 	flex: 1;
 	border-radius: 10px;
 }
+
 
 .search .search-results-container {
 	display: flex;
@@ -715,7 +708,7 @@ footer {
 }
 
 .search .car-card {
-	background-color: white;
+	background-color: var(--secondary-color);
 	border-radius: 10px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 	overflow: hidden;
@@ -754,14 +747,14 @@ footer {
 }
 
 .search .search-button {
-	background-color: #d5e37c;
-	color: #5a6b33;
+	background-color: var(--primary-color);
+	color: var(--background-color);
 }
 
 
 .search .info-btn {
-	background-color: #d5e37c;
-	color: #5a6b33;
+	background-color: var(--primary-color);
+	color: var(--background-color);
 	padding: 10px 20px;
 	text-decoration: none;
 	border-radius: 5px;
@@ -800,7 +793,7 @@ input[type="radio"] {
 
 /* About.css */
 .about-page {
-  background-color: #191f0c;
+  background-color: var(--background-color);
 }
 .about-container {
 	display: flex;
@@ -820,12 +813,12 @@ input[type="radio"] {
 .about-column {
   flex: 1; /* Adjust the flex value to make the text column narrower or wider */
 }
-.about-column h2 {
-	color: #d7f379;
+.about-column h1 {
+	color: var(--primary-color);
 }
 
 .about-column p {
-	color: #fff;
+	color: var(--secondary-color);
 }
 
 .about-img {
@@ -835,40 +828,49 @@ input[type="radio"] {
 	margin: 0 auto; /* Center the image horizontally */
 }
 
-.main-title {
+.meet-team-title {
   text-align: center;
-  margin-top: 30px; /* Adjust the margin as needed */
+  margin-top: 60px; /* Adjust the margin as needed */
 }
 
-.main-title h1 {
+.meet-team-title h1 {
   font-size: 2.5rem; /* Adjust the font size as needed */
-  color: #d7f379;
+  color: var(--primary-color);
 }
 
-.main-title h2 {
+.meet-team-title h2 {
   font-size: 1.2rem; /* Adjust the font size as needed */
-  color: #fff;
+  color: var(--secondary-color);
 }
 
-/* Styles for circles and names */
-.circle-container {
+/* About images */
+
+.image-row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
 }
 
-.circle {
+.image-row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 50px 240px 50px 240px;
+}
+
+.image-container {
+  flex: 1;
   text-align: center;
-  margin: 10px;
 }
 
-.circle img {
-  width: 100px; /* Set the desired width */
-  height: 100px; /* Set the desired height */
-  border-radius: 50%; /* Make the image circular */
+.image-container img {
+  max-width: 100%;
+  height: auto;
 }
-
-.circle-name {
-  margin-top: 5px; /* Adjust spacing between image and name */
-  font-weight: bold;
+.image-name {
+  margin-bottom: 5px;
+  color: var(--secondary-color);
 }

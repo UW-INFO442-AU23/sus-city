@@ -13,7 +13,7 @@ export default function About(props) {
 				</div>
 				<div className="about-column">
 					{/* Text content goes here */}
-					<h2>Our Mission</h2>
+					<h1>Our Mission</h1>
 					<p>
 						Our goal is to inform young adults about the impact of
 						carbon emissions related to transportation in cities.
@@ -27,27 +27,35 @@ export default function About(props) {
 					</p>
 				</div>
 			</div>
-			<div className="main-title">
+			<div className="meet-team-title">
 				<h1>Meet Our Team</h1>
 				<h2>
 					Meet the faces of the Informatics students at the University
 					of Washington who created X-Scape.
 				</h2>
 			</div>
-			<div class="circle-container">
-				<div class="circle">
+			<div className="image-row">
+				<div className="image-container">
+					<div className="image-name">Arianna Khan</div>
 					<img src="/imgs/ethan.png" alt="Image 1" />
-					<div class="circle-name">Name 1</div>
 				</div>
-
-				<div class="circle">
-					<img src="/imgs/ethan.png" alt="Image 4" />
-					<div class="circle-name">Name 4</div>
+				<div className="image-container">
+					<div className="image-name">Ethan Wang</div>
+					<img src="/imgs/ethan.png" alt="Image 2" />
 				</div>
-
-				<div class="circle">
-					<img src="/imgs/ethan.png" alt="Image 5" />
-					<div class="circle-name">Name 5</div>
+				<div className="image-container">
+					<div className="image-name">Stephanie Wang</div>
+					<img src="/imgs/ethan.png" alt="Image 3" />
+				</div>
+			</div>
+			<div className="image-row-2">
+				<div className="image-container">
+					<div className="image-name">Ella Tao</div>
+					<img src="/imgs/ethan.png" alt="Image 1" />
+				</div>
+				<div className="image-container">
+					<div className="image-name">Cici Zhao</div>
+					<img src="/imgs/ethan.png" alt="Image 2" />
 				</div>
 			</div>
 		</div>
