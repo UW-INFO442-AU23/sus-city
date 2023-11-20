@@ -6,6 +6,9 @@
 
 	/* Define other variables */
 }
+html{
+	background-color: var(--background-color);
+}
 
 /* Footer Styles */
 .footer {
