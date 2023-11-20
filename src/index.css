@@ -894,7 +894,7 @@ input[type="radio"] {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 100%;
+	min-height: 100vh;
 }
 
 .quiz-page .div {
