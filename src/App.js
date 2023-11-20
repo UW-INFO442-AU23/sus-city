@@ -7,6 +7,7 @@ import _ from 'lodash';
 import Compare from "./components/Compare/compare";
 import Home from "./components/Home/home";
 import Quiz from "./components/Quiz/quiz";
+import Questionary from "./components/Quiz/questionary.js";
 import Search from "./components/Search/search";
 import Navbar from './components/Navbar/navbar';
 import About from './components/About/about';
@@ -23,6 +24,7 @@ export default function App(props) {
               <Route path="/Quiz" element={<Quiz/>} />
               <Route path="/Search" element={<Search cars={cars}/>} />
               <Route path="/About" element={<About/>} />
+              <Route path="/Questionary" element={<Questionary/>} />
           </Route>
         </Routes> 
       </div>
