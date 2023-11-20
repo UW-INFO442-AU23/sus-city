@@ -565,6 +565,10 @@ html{
 	background-color: var(--background-color);
 }
 
+.compare {
+	min-height: 100vh;
+}
+
 .compare .compare-heading {
 	color: var(--primary-color);
 	font-family: "Rubik", Helvetica;
