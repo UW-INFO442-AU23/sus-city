@@ -64,13 +64,6 @@ function Navbar() {
 				<div class="footer-logo">
 					<img src="logo.png" alt="Logo" />
 				</div>
-				<div class="footer-links">
-					<NavLink to="/">Home</NavLink>
-					<NavLink to="/Search">Search</NavLink>
-					<NavLink to="/Compare">Compare</NavLink>
-					<NavLink to="/Quiz">Quiz</NavLink>
-					<NavLink to="/About">About</NavLink>
-				</div>
 				<div class="footer-info">
 					<span>&copy; 2023 INFO 442 X-Scape</span>
 				</div>

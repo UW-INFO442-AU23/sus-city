@@ -25,13 +25,6 @@ html{
 	/* Adjust the size of the logo */
 }
 
-.footer-links a {
-	color: var(--secondary-color);
-	margin-right: 50px;
-	/* Adjust the spacing between links */
-	text-decoration: none;
-}
-
 .footer-info span {
 	font-size: 14px;
 	/* Adjust the font size of the info */
