@@ -18,7 +18,8 @@ const quizzes = [
   ['More than $6,000', '$4,000 to $6,000', '$2,000 to $4,000', 'Save up to $2,000', 'No preference'],
 ];
 
-const Questionary = () => {
+export default function Questionary(props){
+  let cars = props.cars;
   const [currentQuiz, setCurrentQuiz] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState([]);
 
@@ -48,10 +49,8 @@ const Questionary = () => {
           onPrevious={handlePrevious}
         />
       ) : (
-        <Results selectedOptions={selectedOptions} />
+        <Results selectedOptions={selectedOptions} cars={cars}/>
       )}
     </div>
   );
 };
-
-export default Questionary;
