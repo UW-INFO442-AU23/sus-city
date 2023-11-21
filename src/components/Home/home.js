@@ -213,7 +213,7 @@ export default function Home(props) {
 							<img
 								className="tree-vector"
 								alt="Tree vector"
-								src="/imgs/tree.png"
+								src="/imgs/tree.svg"
 							/>
 							<img
 								className="group"
