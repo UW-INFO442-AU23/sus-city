@@ -1,28 +1,38 @@
 :root {
 	--background-color: #191f0c;
-	--primary-color: #D7F379;
+	--primary-color: #d7f379;
 	--secondary-color: #fff;
 	--third-color: #798068;
 
 	/* Define other variables */
 }
-html{
+html {
+	background-color: var(--background-color);
+}
+body {
+	margin: 0;
+	min-height: 100vh;
+	position: relative;
 	background-color: var(--background-color);
 }
 
 /* Footer Styles */
 .footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 	background-color: var(--background-color);
 	color: var(--secondary-color);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px;
+	padding: 20px 56px;
 }
 
 .footer-logo img {
 	max-width: 100px;
-	/* Adjust the size of the logo */
+	height: auto;
 }
 
 .footer-info span {
@@ -34,20 +44,22 @@ html{
 
 .nav-bar {
 	background-color: var(--background-color);
-	padding-left: 3.5rem;
-	padding-right: 1.5rem;
+	padding: 10px 56px;
 }
 
 .nav-item {
 	padding: 0px 15px;
+	font-size: 1.5em;
 }
 
 .nav-bar .nav-item .nav-link.active {
 	/* Add your active link styles here */
-	color: #D7F379;
-	/* For example, changing the text color to red */
+	color: #d7f379;
 }
-
+.logo-img {
+	width: 130px; /* Adjust the size as needed */
+	height: auto; /* Maintain aspect ratio */
+}
 .nav-link:hover::after {
 	content: "";
 	display: block;
@@ -61,6 +73,13 @@ html{
 }
 
 
+
+
+
+
+
+
+/* Homepage Start */
 
 .homepage {
 	background-color: var(--background-color);
@@ -496,7 +515,7 @@ html{
 	background-color: var(--primary-color);
 	border-radius: 18.5px;
 	height: 37px;
-	left: 130px;
+	left: 131px;
 	position: absolute;
 	top: 0;
 	width: 37px;
@@ -504,7 +523,7 @@ html{
 
 .homepage .group-2 {
 	height: 17px;
-	left: 139px;
+	left: 140px;
 	position: absolute;
 	top: 10px;
 	transform: rotate(90deg);
@@ -549,6 +568,18 @@ html{
 	position: relative;
 	width: 1512px;
 }
+
+/* Homepage End */
+
+
+
+
+
+
+
+
+
+
 
 /** start of content css **/
 
@@ -655,14 +686,12 @@ html{
 
 /** end of content css + start of about css **/
 
-
 .search {
 	background-color: var(--background-color);
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	padding-left: 10rem;
-	padding-right: 10rem;
+	padding: 0rem 10rem 5rem 10rem;
 	min-height: 100vh;
 }
 
@@ -699,7 +728,6 @@ html{
 	flex: 1;
 	border-radius: 10px;
 }
-
 
 .search .search-results-container {
 	display: flex;
@@ -759,7 +787,6 @@ html{
 	color: var(--background-color);
 }
 
-
 .search .info-btn {
 	background-color: var(--primary-color);
 	color: var(--background-color);
@@ -773,7 +800,6 @@ html{
 .search .filter-title {
 	display: flex;
 }
-
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -796,12 +822,13 @@ input[type="radio"] {
 }
 
 .search .avg-text {
-	color: #8f8f8f
+	color: #8f8f8f;
 }
 
 /* About.css */
 .about-page {
 	background-color: var(--background-color);
+	padding-bottom: 20px;
 }
 
 .about-container {
@@ -903,7 +930,7 @@ input[type="radio"] {
 
 .quiz-page .div {
 	background-color: #191f0c;
-	height: 1127px;
+	height: auto;
 	overflow: hidden;
 	position: relative;
 	width: 1512px;
@@ -1258,7 +1285,6 @@ input[type="radio"] {
 	width: 30px;
 }
 
-
 .quiz-body {
 	background-color: #191f0c;
 	display: flex;
@@ -1274,13 +1300,13 @@ input[type="radio"] {
 /* Center the quiz title */
 .quiz-body h2 {
 	text-align: center;
-	margin-top: 300px;
+	margin-top: 150px;
 }
 
 /* Styles for the quiz options container */
 .quiz-body .options-container {
 	display: grid;
-	margin: 150px;
+	margin: 100px 0px 100px 0px;
 	grid-template-columns: repeat(2, 1fr);
 	/* Two columns of equal width */
 	gap: 50px;
@@ -1325,8 +1351,6 @@ input[type="radio"] {
 	/* Adjust as needed for spacing */
 }
 
-
-
 .custom-checkbox {
 	opacity: 0;
 	position: absolute;
@@ -1359,11 +1383,12 @@ input[type="radio"] {
 /* Styles for type-solid-left-icon buttons */
 .type-solid-left-icon {
 	align-items: flex-start;
-	background-color: #D7F379;
+	background-color: #d7f379;
 	border-radius: 15px;
 	display: inline-flex;
 	padding: 6px 6px 6px 8px;
 	position: relative;
+	border: none;
 }
 
 .type-solid-left-icon .text {
@@ -1425,14 +1450,13 @@ input[type="radio"] {
 	flex: 2;
 }
 
-
 .quiz-result .car-card {
 	background-color: var(--secondary-color);
 	border-radius: 10px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 	overflow: hidden;
 	width: 350px;
-	margin: 0 5rem
+	margin: 0 5rem;
 }
 
 .quiz-result .car-card img {
@@ -1481,7 +1505,7 @@ input[type="radio"] {
 }
 
 .quiz-result .avg-text {
-	color: #8f8f8f
+	color: #8f8f8f;
 }
 
 .quiz-result .info-btn {
@@ -1499,7 +1523,6 @@ input[type="radio"] {
 	justify-content: center;
 	align-items: center;
 }
-
 
 .quiz-result .link-container {
 	display: flex;
@@ -1553,6 +1576,7 @@ input[type="radio"] {
 	position: absolute;
 	top: 0;
 	width: 37px;
+	border: none;
 }
 
 .quiz-result .group-2 {
@@ -1594,3 +1618,20 @@ input[type="radio"] {
 	transform: rotate(45deg);
 	width: 12px;
 }
+
+.homepage {
+	background-color: #191f0c;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+  }
+  
+  .homepage .div {
+	background-color: #191f0c;
+	height: 4073px;
+	overflow: hidden;
+	position: relative;
+	width: 1512px;
+  }
+  

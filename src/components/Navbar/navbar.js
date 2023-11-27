@@ -7,7 +7,7 @@ function Navbar() {
 			<nav className="nav-bar fixed-top navbar navbar-expand-sm navbar-dark">
 				<div className="container-fluid">
 					<NavLink to="/" className="web-logo navbar-brand">
-						<img src="logo.png" alt="X scape logo" />
+						<img src="/imgs/logo.png" alt="X scape logo" className="logo-img" />
 					</NavLink>
 
 					{/* Hamburger Menu Button */}
@@ -62,7 +62,7 @@ function Navbar() {
 
 			<footer class="footer">
 				<div class="footer-logo">
-					<img src="logo.png" alt="Logo" />
+					<img src="/imgs/logo.png" alt="Logo" />
 				</div>
 				<div class="footer-info">
 					<span>&copy; 2023 INFO 442 X-Scape</span>
