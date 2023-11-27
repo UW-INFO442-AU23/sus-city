@@ -825,6 +825,42 @@ input[type="radio"] {
 	color: #8f8f8f;
 }
 
+
+.search .no-results-message {
+    margin-top: 20px;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 200px; 
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: visibility 0.3s, opacity 0.3s ease-in-out;
+    opacity: 0;
+    font-size: 1em; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
 /* About.css */
 .about-page {
 	background-color: var(--background-color);

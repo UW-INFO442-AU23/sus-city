@@ -14,7 +14,6 @@ export default function Search(props) {
 
   let cars = props.cars;
 
-
   useEffect(() => {
     const makes = [...new Set(cars.map((car) => car.make))];
     setUniqueMakes(makes);
@@ -24,7 +23,6 @@ export default function Search(props) {
 
     const drives = [...new Set(cars.map((car) => car.drive))];
     setUniqueDrives(drives);
-
   }, [cars]);
 
   const handleSearchChange = (event) => {
@@ -64,15 +62,29 @@ export default function Search(props) {
   };
 
   const handlePriceChange = (price) => {
-    setSelectedPrices(prev => {
-        return prev.includes(price) ? prev.filter(p => p !== price) : [...prev, price];
+    setSelectedPrices((prev) => {
+      return prev.includes(price)
+        ? prev.filter((p) => p !== price)
+        : [...prev, price];
     });
+  };
+
+  const handleKeyDown = (event) => {
+    // Check if the Enter key was pressed
+    if (event.key === "Enter") {
+      handleSearchClick();
+    }
+  };
+
+  const handleClearSearch = () => {
+    setSearchQuery("");
+    setFilteredCars(cars);
   };
 
   const applyFilters = () => {
     const matchedCars = props.cars.filter((car) => {
       const emission = parseInt(car.co2_emission, 10);
-      const price = parseFloat(car.price.replace(/,/g, ''));
+      const price = parseFloat(car.price.replace(/,/g, ""));
       const isInEmissionRange = (range) => {
         switch (range) {
           case "zero":
@@ -92,16 +104,16 @@ export default function Search(props) {
 
       const isInPriceRange = (category) => {
         switch (category) {
-            case "$":
-                return price < 25000;
-            case "$$":
-                return price >= 25000 && price < 35000;
-            case "$$$":
-                return price >= 35000 && price < 50000;
-            case "$$$$":
-                return price >= 50000;
-            default:
-                return false;
+          case "$":
+            return price < 25000;
+          case "$$":
+            return price >= 25000 && price < 35000;
+          case "$$$":
+            return price >= 35000 && price < 50000;
+          case "$$$$":
+            return price >= 50000;
+          default:
+            return false;
         }
       };
 
@@ -135,19 +147,19 @@ export default function Search(props) {
     setSelectedMake("");
     setSelectedTypes([]);
     setSelectedDrives([]);
-    setSelectedEmissions([]); 
-    setSelectedPrices([]); 
+    setSelectedEmissions([]);
+    setSelectedPrices([]);
     setFilteredCars(cars);
   };
 
   // convert the number into dollar signs to be displayed as tags
   const getPriceCategory = (price) => {
-    const numericPrice = parseFloat(price.replace(/,/g, '')); 
+    const numericPrice = parseFloat(price.replace(/,/g, ""));
 
-    if (numericPrice < 25000) return '$';
-    if (numericPrice >= 25000 && numericPrice < 35000) return '$$';
-    if (numericPrice >= 35000 && numericPrice < 50000) return '$$$';
-    return '$$$$';
+    if (numericPrice < 25000) return "$";
+    if (numericPrice >= 25000 && numericPrice < 35000) return "$$";
+    if (numericPrice >= 35000 && numericPrice < 50000) return "$$$";
+    return "$$$$";
   };
 
   return (
@@ -157,7 +169,9 @@ export default function Search(props) {
       </header>
       <div className="filter-search">
         <div className="filter-form">
-          <button className="clear-filters-btn" onClick={handleClearFilters}>Clear Filters</button>
+          <button className="clear-filters-btn" onClick={handleClearFilters}>
+            Clear Filters
+          </button>
           <div className="make-filter p-3">
             <h6 className="filter-title">Filter by Make</h6>
             <select
@@ -203,7 +217,13 @@ export default function Search(props) {
           </div>
           <div className="emission-filter p-2 mx-2 border-top">
             <h6>Filter by CO2 Emission</h6>
-            {["zero", "0-100", "100-200", "200-300", "300+"].map((category) => (
+            {[
+              "0 grams/mile",
+              "1-100 grams/mile",
+              "100-200 grams/mile",
+              "200-300 grams/mile",
+              "300+ grams/mile",
+            ].map((category) => (
               <div key={category}>
                 <input
                   type="checkbox"
@@ -218,7 +238,17 @@ export default function Search(props) {
           <div className="price-filter p-2 mx-2 border-top">
             <div className="filter-title">
               <h6>Filter by Price</h6>
-                <span class="material-symbols-outlined ml-1">info</span>
+              <div class="tooltip-container">
+                <span class="tooltip-icon material-symbols-outlined ml-1">
+                  info
+                </span>
+                <div class="tooltip-text">
+                  <p>$: The starting price is under 25k</p>
+                  <p>$$: The starting price is between 25k to 35k</p>
+                  <p>$$$: The starting price is between 35k to 50k</p>
+                  <p>$$$$: The starting price is above 50k</p>
+                </div>
+              </div>
             </div>
 
             {["$", "$$", "$$$", "$$$$"].map((price) => (
@@ -239,10 +269,12 @@ export default function Search(props) {
             <div className="input-group">
               <input
                 type="text"
+                value={searchQuery}
                 className="search-input form-control mr-2 rounded"
-                placeholder="Search the keywords of makers, models..."
+                placeholder="Search the keywords of makes, models..."
                 aria-label="search cars"
                 onChange={handleSearchChange}
+                onKeyDown={handleKeyDown}
               />
               <button
                 className="search-button btn btn-primary"
@@ -251,41 +283,63 @@ export default function Search(props) {
               >
                 Search Cars
               </button>
+              <button
+                className="clear-search-button btn btn-secondary ml-3"
+                type="button"
+                onClick={handleClearSearch}
+              >
+                Clear Search
+              </button>
             </div>
           </div>
           <div className="matched-cars">
-            {filteredCars.map((car) => (
-              <div className="car-card" key={car.title}>
-                <h5 className="card-title px-3 pt-4">{car.title}</h5>
-                <img src={car.image} alt={car.title}/>
-                <div className="card-content">
-                  <div className="car-price">
-                    <h5>${parseInt(car.price.replace(/,/g, '')).toLocaleString()}</h5>
-                    <p className="avg-text ml-2">Average Price</p>
+            {filteredCars.length > 0 ? (
+              filteredCars.map((car) => (
+                <div className="car-card" key={car.title}>
+                  <h5 className="card-title px-3 pt-4">{car.title}</h5>
+                  <img src={car.image} alt={car.title} />
+                  <div className="card-content">
+                    <div className="car-price">
+                      <h5>
+                        $
+                        {parseInt(car.price.replace(/,/g, "")).toLocaleString()}
+                      </h5>
+                      <p className="avg-text ml-2">Starting Price</p>
+                    </div>
+                    <div className="tag">{car.car_type}</div>
+                    <div className="tag">{getPriceCategory(car.price)}</div>
+                    <div className="tag">{car.number_of_seats} seats</div>
+                    {car.apple_carplay === "TRUE" && (
+                      <div className="tag"> Apple CarPlay</div>
+                    )}
+                    {car.keyless_entry === "TRUE" && (
+                      <div className="tag"> Keyless Entry</div>
+                    )}
+                    {car.dynamic_cruise_control === "TRUE" && (
+                      <div className="tag"> Dynamic Cruise</div>
+                    )}
+                    <div className="card-info border-top border-bottom">
+                      <p className="card-description">Drive: {car.drive}</p>
+                      <p>Size: {car.vehicle_size_class}</p>
+                      <p>CO2 Emission: {car.co2_emission} grams/mile</p>
+                    </div>
+                    <a
+                      href={car.external_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="info-btn"
+                    >
+                      Visit Website <i class="bi bi-box-arrow-up-right ml-1"></i>
+                    </a>
                   </div>
-                  <div className="tag">{car.car_type}</div>
-                  <div className="tag">{getPriceCategory(car.price)}</div>
-                  <div className="tag">{car.number_of_seats} seats</div>
-                  {car.apple_carplay === "TRUE" && <div className="tag"> Apple CarPlay</div>}
-                  {car.keyless_entry === "TRUE" && <div className="tag"> Keyless Entry</div>}
-                  {car.dynamic_cruise_control === "TRUE" && <div className="tag"> Dynamic Cruise</div>}
-                  <div className="card-info border-top border-bottom">
-
-                    <p className="card-description">Drive: {car.drive}</p>
-                    <p>Size: {car.vehicle_size_class}</p>
-                    <p>CO2 Emission: {car.co2_emission}</p>
-                  </div>
-                  <a
-                    href={car.external_link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="info-btn"
-                  >
-                    Visit Website
-                  </a>
                 </div>
+              ))
+            ) : (
+              <div className="no-results-message">
+                <p>No results found. </p>
+                <p>Try adjusting filters or search term.</p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </div>
