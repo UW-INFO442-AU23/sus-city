@@ -16,16 +16,16 @@ root.render(
 
 // Import the functions you need from the SDKs you need
 // TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
+// https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCveLxr9mU3x4RxyDKFO2nkpuiU1HD9HOk",
-  authDomain: "xscape-66601.firebaseapp.com",
-  projectId: "xscape-66601",
-  storageBucket: "xscape-66601.appspot.com",
-  messagingSenderId: "1005450554068",
-  appId: "1:1005450554068:web:4fe306eefe44ccc2a36941"
+  apiKey: "AIzaSyDs5j0Vj39f2z74FADvgi5ZIdqcxsRwctk",
+  authDomain: "x-scape-37f08.firebaseapp.com",
+  projectId: "x-scape-37f08",
+  storageBucket: "x-scape-37f08.appspot.com",
+  messagingSenderId: "203865458078",
+  appId: "1:203865458078:web:692728de0c9fd9e9f2028f"
 };
 
 // Initialize Firebase
