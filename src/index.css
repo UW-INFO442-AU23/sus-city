@@ -52,6 +52,10 @@ body {
 	font-size: 1.5em;
 }
 
+.nav-bar .nav-item .nav-link {
+	color: var(--secondary-color);
+}
+
 .nav-bar .nav-item .nav-link.active {
 	/* Add your active link styles here */
 	color: #d7f379;
@@ -71,10 +75,9 @@ body {
 	background-color: var(--primary-color);
 	/* Color of the line */
 }
-
-
-
-
+.nav-bar .nav-item .nav-link:hover {
+	color: var(--secondary-color);
+}
 
 
 
