@@ -40,10 +40,10 @@ export default function Compare(props) {
                     image1: filteredCars1.image, 
                     image2: filteredCars2.image
                 },
-                { property: 'Price', car1: filteredCars1.price, car2: filteredCars2.price },
+                { property: 'Price', car1: `$${parseInt(filteredCars1.price.replace(/[\$,]/g, '')).toLocaleString()}`, car2: `$${parseInt(filteredCars2.price.replace(/[\$,]/g, '')).toLocaleString()}` },
                 { property: 'Classification', car1: filteredCars1.car_type, car2: filteredCars2.car_type },
                 { property: 'Drive Type', car1: filteredCars1.drive, car2: filteredCars2.drive },
-                { property: 'Carbon Emissions', car1: filteredCars1.co2_emission, car2: filteredCars2.co2_emission },
+                { property: 'Carbon Emissions', car1: `${filteredCars1.co2_emission} grams/mile`, car2: `${filteredCars2.co2_emission} grams/mile` },
                 { property: 'Apple CarPlay', car1: handleBoolean(filteredCars1.apple_carplay), car2: handleBoolean(filteredCars2.apple_carplay) },
                 { property: 'Keyless Entry', car1: handleBoolean(filteredCars1.keyless_entry), car2: handleBoolean(filteredCars2.keyless_entry) },
                 { property: 'Dynamic Cruise Control', car1: handleBoolean(filteredCars1.dynamic_cruise_control), car2: handleBoolean(filteredCars2.dynamic_cruise_control) }
