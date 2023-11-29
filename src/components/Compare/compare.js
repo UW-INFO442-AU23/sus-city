@@ -56,8 +56,8 @@ export default function Compare(props) {
     };
 
     const handleClear = () => {
-        setCar1([]);
-        setCar2([]);
+        setCar1("");
+        setCar2("");
         setComparisonResult([]);
         setShowSelectCarsMessage(true);
     };
@@ -95,10 +95,10 @@ export default function Compare(props) {
                         </Form.Select>
                     </div>
                 
-                    <Button variant="secondary" className="compare-button" onClick={handleCompare}>
+                    <Button variant="secondary" className="compare-button" onClick={handleCompare} disabled={!car1 || !car2}>
                         Apply Search
                     </Button>
-                    <Button variant="secondary" className="clear-button" onClick={handleClear}>
+                    <Button variant="secondary" className="clear-button" onClick={handleClear} disabled={!car1 || !car2}>
                         Clear Filters
                     </Button>
                 </div>
