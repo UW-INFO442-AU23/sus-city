@@ -960,6 +960,14 @@ input[type="radio"] {
 	color: var(--secondary-color);
 }
 
+.profile-image {
+    width: 180px; 
+    height: 180px;
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+
 /* Quiz page css */
 
 .quiz-page {
@@ -1676,4 +1684,41 @@ input[type="radio"] {
 	position: relative;
 	width: 1512px;
   }
+
+
+	/* responsive design */
+
+  @media (max-width: 768px) {
+    .search {
+        padding: 0rem 1rem; 
+    }
+
+    .search .filter-search {
+        flex-direction: column; 
+    }
+
+    .search .clear-filters-btn {
+        margin-left: 0; 
+    }
+
+    .search .filter-form,
+    .search .search-results-container {
+        width: 100%; 
+		margin-top: 2rem;
+		padding-right: 3rem;
+    }
+
+    .search .matched-cars {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .search .car-card img {
+        width: 80%; 
+        height: auto;
+    }
+
+	
+
+	
+}
   

@@ -42,25 +42,25 @@ export default function About(props) {
 			<div className="image-row">
 				<div className="image-container">
 					<div className="image-name">Arianna Khan</div>
-					<img src="/imgs/ethan.png" alt="Image 1" />
+					<img class="profile-image" src="/imgs/ethan.png" alt="Image 1" />
 				</div>
 				<div className="image-container">
 					<div className="image-name">Ethan Wang</div>
-					<img src="/imgs/ethan.png" alt="Image 2" />
+					<img class="profile-image" src="/imgs/ethan.png" alt="Image 2" />
 				</div>
 				<div className="image-container">
 					<div className="image-name">Stephanie Wang</div>
-					<img src="/imgs/ethan.png" alt="Image 3" />
+					<img class="profile-image" src="/imgs/ethan.png" alt="Image 3" />
 				</div>
 			</div>
 			<div className="image-row-2">
 				<div className="image-container">
 					<div className="image-name">Ella Tao</div>
-					<img src="/imgs/ethan.png" alt="Image 1" />
+					<img class="profile-image" src="/imgs/ella.jpg" alt="Image 1" />
 				</div>
 				<div className="image-container">
 					<div className="image-name">Cici Zhao</div>
-					<img src="/imgs/ethan.png" alt="Image 2" />
+					<img class="profile-image" src="/imgs/ethan.png" alt="Image 2" />
 				</div>
 			</div>
 		</div>
