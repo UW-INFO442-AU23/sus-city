@@ -892,10 +892,13 @@ input[type="radio"] {
 
 .about-column h1 {
 	color: var(--primary-color);
+	margin-bottom: 20px;
 }
 
 .about-column p {
 	color: var(--secondary-color);
+	margin-bottom: 20px;
+
 }
 
 .about-img {
