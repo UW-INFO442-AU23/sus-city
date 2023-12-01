@@ -24,7 +24,7 @@ const Quizbody = ({ quizNumber, quizTitle, options, onSelectOption, onPrevious }
   };
 
   const handlePrevious = () => {
-    onPrevious(); // Assuming onPrevious is a prop function to go back
+    onPrevious();
   };
 
 
@@ -32,6 +32,9 @@ const Quizbody = ({ quizNumber, quizTitle, options, onSelectOption, onPrevious }
     <div className="quiz-body">
       <div className="title-container">
         <h2>{quizTitle}</h2>
+      </div>
+      <div>
+        <image alt="quiz progress" src="/imgs/quiz1.png"></image>
       </div>
       <div className="options-container">
         {options.map((option, index) => (

@@ -22,9 +22,9 @@ export default function App(props) {
               <Route path="/" element={<Home/>} />
               <Route path="/Compare" element={<Compare cars={cars}/>} />
               <Route path="/Quiz" element={<Quiz/>} />
+              <Route path="/Quiz/Questionary" element={<Questionary cars={cars}/>} />
               <Route path="/Search" element={<Search cars={cars}/>} />
               <Route path="/About" element={<About/>} />
-              <Route path="/Questionary" element={<Questionary cars={cars}/>} />
           </Route>
         </Routes> 
       </div>

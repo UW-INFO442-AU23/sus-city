@@ -984,7 +984,6 @@ input[type="radio"] {
 	overflow: hidden;
 	position: relative;
 	width: 1512px;
-	margin: 37px;
 }
 
 .quiz-page .overlap {
@@ -1342,32 +1341,24 @@ input[type="radio"] {
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
+	padding-top: 10%;
+	padding-bottom: 4%;
 	color: white;
-	/* Set text color to white */
 }
 
-/* Center the quiz title */
 .quiz-body h2 {
 	text-align: center;
-	margin-top: 150px;
 }
 
-/* Styles for the quiz options container */
 .quiz-body .options-container {
 	display: grid;
-	margin: 100px 0px 100px 0px;
 	grid-template-columns: repeat(2, 1fr);
-	/* Two columns of equal width */
 	gap: 50px;
-	/* Space between grid items */
 	justify-items: center;
-	/* Center items horizontally */
 	width: 60%;
-	/* Ensure it takes full width for proper alignment */
 }
 
-/* Styles for each option box */
 .quiz-body .box {
 	height: 50px;
 	width: 300px;
@@ -1375,30 +1366,24 @@ input[type="radio"] {
 	position: relative;
 }
 
-/* Styles for the rectangle inside each box */
 .quiz-body .rectangle {
 	border: 3px solid;
 	border-color: #d7f379;
 	border-radius: 10px;
 	height: 50px;
 	width: 100%;
-	/* Make it take the full width of the box */
 	display: flex;
 	align-items: center;
 	padding-left: 10px;
 }
 
-/* Style for the Next button */
 .quiz-body button {
 	align-self: flex-end;
-	/* Align button to the right */
 	margin: 20px;
-	/* Add some margin */
 }
 
 .quiz-body .title-container {
 	margin-bottom: 30px;
-	/* Adjust as needed for spacing */
 }
 
 .custom-checkbox {
@@ -1417,9 +1402,7 @@ input[type="radio"] {
 }
 
 .rectangle-default.checked {
-	/* Add styles for when the checkbox is checked */
 	background-color: #d7f379;
-	/* Example: Fill color when checked */
 }
 
 .quiz-body .button-container {
@@ -1427,10 +1410,8 @@ input[type="radio"] {
 	justify-content: space-between;
 	width: 100%;
 	padding: 20px;
-	margin-top: 100px;
 }
 
-/* Styles for type-solid-left-icon buttons */
 .type-solid-left-icon {
 	align-items: flex-start;
 	background-color: #d7f379;
@@ -1451,7 +1432,6 @@ input[type="radio"] {
 
 .type-solid-left-icon .label {
 	color: white;
-	/* Replace with actual color variable if available */
 	font-family: "Nunito Sans-Regular", Helvetica, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -1466,12 +1446,10 @@ input[type="radio"] {
 
 .type-solid-left-icon.next-button {
 	margin-left: auto;
-	/* Aligns to the right */
 }
 
 .type-solid-left-icon.previous-button {
 	margin-right: auto;
-	/* Aligns to the left */
 }
 
 .quiz-body .button-container .next-button-placeholder {
@@ -1482,22 +1460,21 @@ input[type="radio"] {
 	background-color: #191f0c;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
+	padding: 6% 0 5% 0;
 	color: white;
 }
 
 .quiz-result .title-container {
-	margin: 150px;
+	font-family: "Rubik-Regular", Helvetica;
 }
 
 .quiz-result .body-container {
 	display: flex;
 	flex-direction: row;
-	margin-left: 2rem;
-	flex: 2;
 }
 
 .quiz-result .car-card {
@@ -1505,6 +1482,10 @@ input[type="radio"] {
 	border-radius: 10px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 530px;
 	width: 350px;
 	margin: 0 5rem;
 }
@@ -1579,7 +1560,6 @@ input[type="radio"] {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin: 150px;
 	gap: 50px;
 }
 

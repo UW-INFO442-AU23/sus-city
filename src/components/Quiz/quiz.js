@@ -7,7 +7,7 @@ export default function Quiz(props) {
                 <div className="overlap">
                     <div className="overlap-group">
                         <p className="text-wrapper">Ready to Discover Your Perfect Eco-Friendly Ride?</p >
-                        < img className="car-vector" alt="Car vector" src="/imgs/car-vector-4-1.png" />
+                        <img className="car-vector" alt="Car vector" src="/imgs/car-vector-4-1.png" />
                     </div>
                     <p className="take-the-car-finder">
                         Take the car finder quiz to
@@ -15,7 +15,7 @@ export default function Quiz(props) {
                         find the car that suits <br />
                         all your needs
                     </p >
-                    <a href="/Questionary" className="button-link">
+                    <a href="/Quiz/Questionary" className="button-link">
                         <div className="group">
                             <div className="overlap-group-2">
                                 <div className="rectangle" />
