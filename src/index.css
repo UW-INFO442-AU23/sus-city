@@ -974,35 +974,29 @@ input[type="radio"] {
 	background-color: #191f0c;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+	height: 80vh;
+	margin: 5rem 5rem 5rem 5rem;
+}
+
+.quiz-page .text-container {
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	min-height: 100vh;
+	align-items: center;
+	width: 40%;
+	gap: 2rem;
 }
 
-.quiz-page .div {
-	background-color: #191f0c;
-	height: auto;
-	overflow: hidden;
-	position: relative;
-	width: 1512px;
+.quiz-page .image-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
 }
 
-.quiz-page .overlap {
-	height: 553px;
-	left: 64px;
-	position: absolute;
-	top: 238px;
-	width: 1393px;
-}
-
-.quiz-page .overlap-group {
-	height: 553px;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 1393px;
-}
-
-.quiz-page .text-wrapper {
+.quiz-page .title {
 	color: #d7f379;
 	font-family: "Rubik-Regular", Helvetica;
 	font-size: 64px;
@@ -1010,36 +1004,32 @@ input[type="radio"] {
 	left: 0;
 	letter-spacing: 0;
 	line-height: normal;
-	position: absolute;
 	top: 0;
-	width: 667px;
 }
 
-.quiz-page .car-vector {
-	height: 552px;
-	left: 599px;
-	position: absolute;
-	top: 1px;
-	width: 794px;
+.quiz-page .text-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
 
 .quiz-page .take-the-car-finder {
 	color: #ffffff;
 	font-family: "Rubik-Regular", Helvetica;
 	font-size: 20px;
 	font-weight: 400;
-	left: 0;
 	letter-spacing: 0;
 	line-height: normal;
-	position: absolute;
-	top: 250px;
+	margin-right: auto;
+}
+
+.quiz-page .button-link {
+	margin-right: auto;
 }
 
 .quiz-page .group {
 	height: 37px;
-	left: 0;
-	position: absolute;
-	top: 391px;
 	width: 186px;
 }
 
@@ -1068,7 +1058,7 @@ input[type="radio"] {
 	left: 15px;
 	letter-spacing: 0;
 	line-height: normal;
-	position: absolute;
+	position: relative;
 	top: 7px;
 	white-space: nowrap;
 }
@@ -1351,12 +1341,17 @@ input[type="radio"] {
 	text-align: center;
 }
 
+.quiz-body .image-container {
+	
+}
+
 .quiz-body .options-container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 50px;
 	justify-items: center;
 	width: 60%;
+	margin-bottom: 5%;
 }
 
 .quiz-body .box {
@@ -1697,6 +1692,40 @@ input[type="radio"] {
         height: auto;
     }
 
+	.quiz-page {
+		background-color: #191f0c;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		margin: 3rem 3rem 3rem 3rem;
+	}
+	
+	.quiz-page .text-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		gap: 2rem;
+	}
+	.quiz-page .title {
+		color: #d7f379;
+		font-family: "Rubik-Regular", Helvetica;
+		font-size: 40px;
+		font-weight: 400;
+		left: 0;
+		letter-spacing: 0;
+		line-height: normal;
+		top: 0;
+	}
+	
+	.quiz-page .image-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
 	
 
 	

@@ -33,8 +33,8 @@ const Quizbody = ({ quizNumber, quizTitle, options, onSelectOption, onPrevious }
       <div className="title-container">
         <h2>{quizTitle}</h2>
       </div>
-      <div>
-        <image alt="quiz progress" src="/imgs/quiz1.png"></image>
+      <div >
+        <img src={`/imgs/quiz${quizNumber+1}.png`} alt="quiz progress" className="image-container"/>
       </div>
       <div className="options-container">
         {options.map((option, index) => (
