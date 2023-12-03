@@ -73,7 +73,7 @@ export default function About(props) {
 			<div className="image-row-2">
 				<div className="image-container">
 					<div className="image-name">Ella Tao
-						<a href="https://www.linkedin.com/in/arianna-khan-0b0804206/" target="_blank" rel="noopener noreferrer">
+						<a href="https://www.linkedin.com/in/yifei-tao-ella/" target="_blank" rel="noopener noreferrer">
 							<img class="linkedin-logo" src="/imgs/linkedin.png" alt="LinkedIn" />
 						</a>
 					</div>
