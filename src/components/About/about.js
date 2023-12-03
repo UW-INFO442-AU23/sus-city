@@ -48,7 +48,7 @@ export default function About(props) {
 							<img class="linkedin-logo" src="/imgs/linkedin.png" alt="LinkedIn" />
 						</a>
 					</div>
-					<img class="profile-image" src="/imgs/arianna.jpeg" alt="Image 1" />
+					<img class="profile-image" src="/imgs/arianna.png" alt="Image 1" />
 				</div>
 
 				<div className="image-container">
@@ -88,7 +88,7 @@ export default function About(props) {
 					</div>
 					<img class="profile-image" src="/imgs/ethan.png" alt="Image 2" />
 				</div>
-				
+
 			</div>
 		</div>
 	);
