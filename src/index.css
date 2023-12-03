@@ -673,8 +673,8 @@ body {
 }
 
 .model-image {
-	max-width: 300px;
-	max-height: 100px;
+	width: 70%;
+	height: 70%;
 	margin-bottom: 8px;
 }
 
