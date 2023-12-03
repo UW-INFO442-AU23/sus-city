@@ -82,11 +82,11 @@ export default function About(props) {
 
 				<div className="image-container">
 					<div className="image-name">Cici Zhao
-						<a href="https://www.linkedin.com/in/arianna-khan-0b0804206/" target="_blank" rel="noopener noreferrer">
+						<a href="https://www.linkedin.com/in/xingyuan-cici-zhao-081b86247/" target="_blank" rel="noopener noreferrer">
 							<img class="linkedin-logo" src="/imgs/linkedin.png" alt="LinkedIn" />
 						</a>
 					</div>
-					<img class="profile-image" src="/imgs/ethan.png" alt="Image 2" />
+					<img class="profile-image" src="/imgs/cici.png" alt="cici iamge" />
 				</div>
 
 			</div>
