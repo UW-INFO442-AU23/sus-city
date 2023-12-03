@@ -1400,9 +1400,7 @@ input[type="radio"] {
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	height: 100vh;
 	padding-top: 10%;
-	padding-bottom: 4%;
 	color: white;
 	gap: 30px
 }
@@ -1533,7 +1531,6 @@ input[type="radio"] {
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	height: 90vh;
 	padding: 6% 0 7% 0;
 	gap: 50px;
 	color: white;
@@ -1772,7 +1769,6 @@ input[type="radio"] {
 		flex-direction: column-reverse;
 		margin: 0rem 0rem 0rem 0rem;
 		padding: 6rem 2rem 1rem 2rem;
-		height: 100%;
 		gap: 1rem;
 	}
 
@@ -1846,7 +1842,6 @@ input[type="radio"] {
 		gap: 20px;
 		align-items: center;
 		width: 100%;
-		height: 100%;
 		padding: 20% 0% 25% 0%;
 		color: white;
 	}
