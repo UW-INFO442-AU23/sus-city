@@ -39,29 +39,56 @@ export default function About(props) {
 					of Washington who created X-Scape.
 				</h2>
 			</div>
+
+
 			<div className="image-row">
 				<div className="image-container">
-					<div className="image-name">Arianna Khan</div>
-					<img class="profile-image" src="/imgs/ethan.png" alt="Image 1" />
+						<div className="image-name">Arianna Khan
+						<a href="https://www.linkedin.com/in/arianna-khan-0b0804206/" target="_blank" rel="noopener noreferrer">
+							<img class="linkedin-logo" src="/imgs/linkedin.png" alt="LinkedIn" />
+						</a>
+					</div>
+					<img class="profile-image" src="/imgs/arianna.jpeg" alt="Image 1" />
 				</div>
+
 				<div className="image-container">
-					<div className="image-name">Ethan Wang</div>
+					<div className="image-name">Ethan Wang
+						<a href="https://www.linkedin.com/in/ethanwang17/" target="_blank" rel="noopener noreferrer">
+							<img class="linkedin-logo" src="/imgs/linkedin.png" alt="LinkedIn" />
+						</a>
+					</div>
 					<img class="profile-image" src="/imgs/ethan.png" alt="Image 2" />
 				</div>
+
 				<div className="image-container">
-					<div className="image-name">Stephanie Wang</div>
+					<div className="image-name">Stephanie Wang
+						<a href="https://www.linkedin.com/in/stephanieliwang/" target="_blank" rel="noopener noreferrer">
+							<img class="linkedin-logo" src="/imgs/linkedin.png" alt="LinkedIn" />
+						</a>
+					</div>
 					<img class="profile-image" src="/imgs/ethan.png" alt="Image 3" />
 				</div>
 			</div>
+
 			<div className="image-row-2">
 				<div className="image-container">
-					<div className="image-name">Ella Tao</div>
+					<div className="image-name">Ella Tao
+						<a href="https://www.linkedin.com/in/arianna-khan-0b0804206/" target="_blank" rel="noopener noreferrer">
+							<img class="linkedin-logo" src="/imgs/linkedin.png" alt="LinkedIn" />
+						</a>
+					</div>
 					<img class="profile-image" src="/imgs/ella.jpg" alt="Image 1" />
 				</div>
+
 				<div className="image-container">
-					<div className="image-name">Cici Zhao</div>
+					<div className="image-name">Cici Zhao
+						<a href="https://www.linkedin.com/in/arianna-khan-0b0804206/" target="_blank" rel="noopener noreferrer">
+							<img class="linkedin-logo" src="/imgs/linkedin.png" alt="LinkedIn" />
+						</a>
+					</div>
 					<img class="profile-image" src="/imgs/ethan.png" alt="Image 2" />
 				</div>
+				
 			</div>
 		</div>
 	);

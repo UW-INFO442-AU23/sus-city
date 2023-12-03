@@ -929,6 +929,15 @@ input[type="radio"] {
 
 /* About images */
 
+.linkedin-logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+	margin-bottom: 2px; 
+	border-radius: 4px; 
+
+}
+
 .image-row {
 	display: flex;
 	justify-content: space-between;
@@ -939,7 +948,7 @@ input[type="radio"] {
 
 .image-row-2 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	width: 100%;
 	padding: 50px 240px 50px 240px;
@@ -948,6 +957,7 @@ input[type="radio"] {
 .image-container {
 	flex: 1;
 	text-align: center;
+	padding: 0 10px;
 }
 
 .image-container img {
@@ -955,14 +965,17 @@ input[type="radio"] {
 	height: auto;
 }
 
+
 .image-name {
 	margin-bottom: 5px;
 	color: var(--secondary-color);
+	font-size: 1.2rem;
 }
 
 .profile-image {
     width: 180px; 
     height: 180px;
+	min-width: 180px;
     border-radius: 50%; 
     object-fit: cover; 
 }
