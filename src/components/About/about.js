@@ -43,7 +43,7 @@ export default function About(props) {
 
 			<div className="image-row">
 				<div className="image-container">
-						<div className="image-name">Arianna Khan
+					<div className="image-name">Arianna Khan
 						<a href="https://www.linkedin.com/in/arianna-khan-0b0804206/" target="_blank" rel="noopener noreferrer">
 							<img class="linkedin-logo" src="/imgs/linkedin.png" alt="LinkedIn" />
 						</a>
@@ -89,6 +89,34 @@ export default function About(props) {
 					<img class="profile-image" src="/imgs/ethan.png" alt="Image 2" />
 				</div>
 
+			</div>
+
+
+			<div className="about-data">
+				<div className="about-data-content">
+					<h1>About the Data</h1>
+					<p>
+						We sourced our carbon emission data from the U.S. Department of Energy.
+						We cleaned this dataset to remove unnecessary measurements and added columns to include external links,
+						images, and boolean values for car features (e.g. Apple CarPlay, etc.)
+						Next, we converted the file into json to import to our website.
+					</p>
+					<h1>Learn More</h1>
+					<p>
+						Learn more about our project here: <a href="/imgs/X-Scape Presentation Slides.pdf" target="_blank" rel="noopener noreferrer">
+							Click to View Presentation
+						</a>
+					</p>
+					<p>
+						View our Github Repo:  <a href="https://github.com/UW-INFO442-AU23/sus-city" target="_blank" rel="noopener noreferrer">
+							X-Scape Repo
+						</a>
+					</p>
+				</div>
+				<div className="about-data-image-container">
+					<img className="about-data-image" src="/imgs/excel-pic.png" alt="About the Data Image" />
+
+				</div>
 			</div>
 		</div>
 	);

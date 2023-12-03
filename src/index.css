@@ -6,9 +6,11 @@
 
 	/* Define other variables */
 }
+
 html {
 	background-color: var(--background-color);
 }
+
 body {
 	margin: 0;
 	min-height: 100vh;
@@ -60,10 +62,14 @@ body {
 	/* Add your active link styles here */
 	color: #d7f379;
 }
+
 .logo-img {
-	width: 130px; /* Adjust the size as needed */
-	height: auto; /* Maintain aspect ratio */
+	width: 130px;
+	/* Adjust the size as needed */
+	height: auto;
+	/* Maintain aspect ratio */
 }
+
 .nav-link:hover::after {
 	content: "";
 	display: block;
@@ -75,6 +81,7 @@ body {
 	background-color: var(--primary-color);
 	/* Color of the line */
 }
+
 .nav-bar .nav-item .nav-link:hover {
 	color: var(--secondary-color);
 }
@@ -830,36 +837,36 @@ input[type="radio"] {
 
 
 .search .no-results-message {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 .tooltip-container {
-    position: relative;
-    display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
 .tooltip-text {
-    visibility: hidden;
-    width: 200px; 
-    background-color: #f9f9f9;
-    color: #333;
-    text-align: left;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: visibility 0.3s, opacity 0.3s ease-in-out;
-    opacity: 0;
-    font-size: 1em; 
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+	visibility: hidden;
+	width: 200px;
+	background-color: #f9f9f9;
+	color: #333;
+	text-align: left;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: visibility 0.3s, opacity 0.3s ease-in-out;
+	opacity: 0;
+	font-size: 1em;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .tooltip-container:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
 
 
@@ -927,14 +934,71 @@ input[type="radio"] {
 	color: var(--secondary-color);
 }
 
+.about-data-content {
+	flex: 1;
+	margin-right: 40px;
+}
+
+.about-data {
+	display: flex;
+	align-items: center;
+	margin-left: 100px;
+	/* margin-top: 50px; */
+	/* Adjust the margin as needed to move it to the right */
+	color: var(--primary-color);
+	/* Set the text color to light green for the heading */
+}
+
+.about-data p {
+	color: white;
+	margin-bottom: 60px;
+	/* Set the text color to white for the paragraph text */
+}
+
+.about-data-image-container {
+	margin-left: auto;
+	margin-top: 20px;
+
+	/* Adjust the margin as needed */
+}
+
+.about-data-image {
+	max-width: 100%;
+	height: auto;
+	/* margin-top: 20px; */
+	/* Adjust the margin as needed */
+}
+
+@media (max-width: 768px) {
+	.about-data {
+		margin-right: 0px;
+		flex-direction: column; 
+		align-items: flex-end;
+		/* Adjusted margin for smaller screens */
+	}
+
+	.about-data-image-container {
+		margin-top: 0;
+		margin-right: 20px;
+		/* Reset the margin for smaller screens */
+	}
+
+	.about-data-image {
+		/* margin-right: 0px; */
+		max-width: 50%;
+		height: auto;
+		/* Adjust the percentage as needed for smaller screens */
+	}
+}
+
 /* About images */
 
 .linkedin-logo {
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-	margin-bottom: 2px; 
-	border-radius: 4px; 
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+	margin-bottom: 2px;
+	border-radius: 4px;
 
 }
 
@@ -952,6 +1016,7 @@ input[type="radio"] {
 	align-items: center;
 	width: 100%;
 	padding: 50px 240px 50px 240px;
+	margin-bottom: 0px;
 }
 
 .image-container {
@@ -973,11 +1038,11 @@ input[type="radio"] {
 }
 
 .profile-image {
-    width: 180px; 
-    height: 180px;
+	width: 180px;
+	height: 180px;
 	min-width: 180px;
-    border-radius: 50%; 
-    object-fit: cover; 
+	border-radius: 50%;
+	object-fit: cover;
 }
 
 
@@ -1387,7 +1452,7 @@ input[type="radio"] {
 	width: 70%;
 }
 
-.quiz-body .image{
+.quiz-body .image {
 	width: 60%;
 }
 
@@ -1660,47 +1725,47 @@ input[type="radio"] {
 	flex-direction: row;
 	justify-content: center;
 	width: 100%;
-  }
-  
-  .homepage .div {
+}
+
+.homepage .div {
 	background-color: #191f0c;
 	height: 4073px;
 	overflow: hidden;
 	position: relative;
 	width: 1512px;
-  }
+}
 
 
-	/* responsive design */
+/* responsive design */
 
-  @media (max-width: 768px) {
-    .search {
-        padding: 0rem 1rem; 
-    }
+@media (max-width: 768px) {
+	.search {
+		padding: 0rem 1rem;
+	}
 
-    .search .filter-search {
-        flex-direction: column; 
-    }
+	.search .filter-search {
+		flex-direction: column;
+	}
 
-    .search .clear-filters-btn {
-        margin-left: 0; 
-    }
+	.search .clear-filters-btn {
+		margin-left: 0;
+	}
 
-    .search .filter-form,
-    .search .search-results-container {
-        width: 100%; 
+	.search .filter-form,
+	.search .search-results-container {
+		width: 100%;
 		margin-top: 2rem;
 		padding-right: 3rem;
-    }
+	}
 
-    .search .matched-cars {
-        grid-template-columns: repeat(1, 1fr); 
-    }
+	.search .matched-cars {
+		grid-template-columns: repeat(1, 1fr);
+	}
 
-    .search .car-card img {
-        width: 80%; 
-        height: auto;
-    }
+	.search .car-card img {
+		width: 80%;
+		height: auto;
+	}
 
 	.quiz-page {
 		flex-direction: column-reverse;
@@ -1709,7 +1774,7 @@ input[type="radio"] {
 		height: 100%;
 		gap: 1rem;
 	}
-	
+
 	.quiz-page .text-container {
 		display: flex;
 		flex-direction: column;
@@ -1718,6 +1783,7 @@ input[type="radio"] {
 		width: 100%;
 		gap: 1rem;
 	}
+
 	.quiz-page .title {
 		color: #d7f379;
 		font-family: "Rubik-Regular", Helvetica;
@@ -1728,7 +1794,7 @@ input[type="radio"] {
 		line-height: normal;
 		top: 0;
 	}
-	
+
 	.quiz-page .image-container {
 		display: flex;
 		flex-direction: column;
@@ -1736,7 +1802,7 @@ input[type="radio"] {
 		align-items: center;
 		width: 100%;
 	}
-	
+
 	.quiz-body {
 		padding: 30% 0 10% 0;
 		height: 100%;
@@ -1750,6 +1816,7 @@ input[type="radio"] {
 	.quiz-body .title-container {
 		width: 90%;
 	}
+
 	.quiz-body .options-container {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
@@ -1766,8 +1833,8 @@ input[type="radio"] {
 		position: relative;
 		font-size: 15px;
 	}
-	
-	.quiz-body .image{
+
+	.quiz-body .image {
 		width: 80%;
 	}
 
@@ -1783,10 +1850,11 @@ input[type="radio"] {
 		padding: 20% 0% 30% 0%;
 		color: white;
 	}
-	.quiz-result h1{
+
+	.quiz-result h1 {
 		font-size: 25px;
 	}
-	
+
 	.quiz-result .body-container {
 		flex-direction: column;
 		gap: 20px;
@@ -1799,4 +1867,3 @@ input[type="radio"] {
 	}
 
 }
-  
