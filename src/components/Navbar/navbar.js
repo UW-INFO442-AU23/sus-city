@@ -27,27 +27,27 @@ function Navbar() {
 					<div className="collapse navbar-collapse" id="navbarNav">
 						<ul className="navbar-nav ml-auto">
 							<li className="nav-item">
-								<NavLink to="/" className="nav-link" activeClassName="active">
+								<NavLink to="/" className="nav-link">
 									Home
 								</NavLink>
 							</li>
 							<li className="nav-item">
-								<NavLink to="/Search" className="nav-link" activeClassName="active">
+								<NavLink to="/Search" className="nav-link">
 									Search
 								</NavLink>
 							</li>
 							<li className="nav-item">
-								<NavLink to="/Quiz" className="nav-link" activeClassName="active">
+								<NavLink to="/Quiz" className="nav-link">
 									Quiz
 								</NavLink>
 							</li>
 							<li className="nav-item">
-								<NavLink to="/Compare" className="nav-link" activeClassName="active">
+								<NavLink to="/Compare" className="nav-link">
 									Compare
 								</NavLink>
 							</li>
 							<li className="nav-item">
-								<NavLink to="/About" className="nav-link" activeClassName="active">
+								<NavLink to="/About" className="nav-link">
 									About
 								</NavLink>
 							</li>
@@ -60,11 +60,11 @@ function Navbar() {
 				<Outlet />
 			</main>
 
-			<footer class="footer">
-				<div class="footer-logo">
+			<footer className="footer">
+				<div className="footer-logo">
 					<img src="/imgs/logo.png" alt="Logo" />
 				</div>
-				<div class="footer-info">
+				<div className="footer-info">
 					<span>&copy; 2023 INFO 442 X-Scape</span>
 				</div>
 			</footer>
