@@ -66,7 +66,7 @@ export default function About(props) {
 							<img class="linkedin-logo" src="/imgs/linkedin.png" alt="LinkedIn" />
 						</a>
 					</div>
-					<img class="profile-image" src="/imgs/ethan.png" alt="Image 3" />
+					<img class="profile-image" src="/imgs/steph.jpeg" alt="Image 3" />
 				</div>
 			</div>
 
