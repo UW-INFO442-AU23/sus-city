@@ -1549,18 +1549,21 @@ input[type="radio"] {
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	padding: 10% 0 7% 0;
+	padding: 10% 0 10% 0;
 	gap: 50px;
 	color: white;
 }
 
 .quiz-result .title-container {
 	font-family: "Rubik-Regular", Helvetica;
+	text-align: center;
+	width: 80%;
 }
 
 .quiz-result .body-container {
 	display: flex;
 	flex-direction: row;
+	gap: 5rem;
 }
 
 .quiz-result .car-card {
@@ -1573,7 +1576,6 @@ input[type="radio"] {
 	justify-content: space-between;
 	height: 530px;
 	width: 350px;
-	margin: 0 5rem;
 }
 
 .quiz-result .car-card img {
