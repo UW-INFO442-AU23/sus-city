@@ -35,7 +35,7 @@ export default function Home(props) {
                 <div className="mt-5" onClick={scrollToTarget}>
 				  	<button type="button" className="text-wrapper-15 btn btn-custom-outline" onClick={scrollToTarget}>
 						Learn More
-						<i className="bi bi-arrow-right-short"></i>
+						<i className="bi bi-arrow-down-short"></i>
   					</button>
                 </div>
               </div>
