@@ -31,5 +31,6 @@ Built with:
 - HTML, CSS, JavaScript
 
 ## Testing Protocols
+Testing Protocols can be found [here](TestingProtocol.pdf)
 
 ## References 
