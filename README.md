@@ -22,7 +22,7 @@ Our group’s primary focus among the United Nations Sustainable Development Goa
 - Cici Zhao
 
 ## User Personas:
-The two user personas we used when designing our product can be found [here](../UserPersonas.pdf).
+The two user personas we used when designing our product can be found [here]([../UserPersonas.pdf](https://github.com/UW-INFO442-AU23/sus-city/blob/main/UserPersonas.pdf)).
 
 ## Developer Information
 Built with:
