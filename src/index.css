@@ -94,25 +94,45 @@ body {
 .homepage {
 	background-color: var(--background-color);
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	width: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+	margin-right: 150px;
+	margin-left: 50px;
 }
 
-.homepage .div {
-	background-color: var(--background-color);
-	height: 3928px;
-	overflow: hidden;
-	position: relative;
-	width: 1512px;
+.whole {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95%;
 }
 
-.homepage .overlap {
-	height: 3621px;
-	left: 64px;
-	position: absolute;
-	top: 178px;
-	width: 1420px;
+.upper-section {
+    display: flex;
+    justify-content: space-between;
+	margin-top: 10%;
+}
+
+.left-side {
+    width: 40%;
+}
+
+.overlap-2 {
+    width: 60%;
+	margin-top: 10%;
+}
+
+.section2 {
+	margin-top: 75%;
+}
+
+.section3 {
+	margin-top: 75%;
+}
+
+.bottom-section {
+	margin-bottom: 100px;
 }
 
 .homepage .drive-reduce {
@@ -120,19 +140,8 @@ body {
 	font-family: "Rubik", Helvetica;
 	font-size: 96px;
 	font-weight: 400;
-	left: 0;
 	letter-spacing: 0;
 	line-height: normal;
-	position: absolute;
-	top: 7px;
-}
-
-.homepage .overlap-group {
-	height: 3621px;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 1420px;
 }
 
 .homepage .why-should-you-care {
@@ -140,11 +149,9 @@ body {
 	font-family: "Rubik", Helvetica;
 	font-size: 64px;
 	font-weight: 400;
-	left: 0;
 	letter-spacing: 0;
 	line-height: normal;
-	position: absolute;
-	top: 961px;
+
 }
 
 .homepage .overlap-2 {
@@ -260,12 +267,8 @@ body {
 	font-family: "Rubik", Helvetica;
 	font-size: 16px;
 	font-weight: 400;
-	left: 22px;
 	letter-spacing: 0;
 	line-height: normal;
-	position: absolute;
-	top: 221px;
-	width: 209px;
 }
 
 .homepage .img {
@@ -276,13 +279,6 @@ body {
 	width: 110px;
 }
 
-.homepage .overlap-wrapper {
-	height: 300px;
-	left: 491px;
-	position: absolute;
-	top: 3321px;
-	width: 304px;
-}
 
 .homepage .overlap-group-3 {
 	height: 189px;
@@ -397,12 +393,9 @@ body {
 	font-family: "Rubik", Helvetica;
 	font-size: 20px;
 	font-weight: 400;
-	left: 0;
 	letter-spacing: 0;
 	line-height: 34px;
-	position: absolute;
-	top: 1265px;
-	width: 556px;
+	
 }
 
 .homepage .text-wrapper-11 {
@@ -410,28 +403,41 @@ body {
 	font-family: "Rubik", Helvetica;
 	font-size: 20px;
 	font-weight: 400;
-	left: 0;
 	letter-spacing: 0;
 	line-height: 34px;
-	position: absolute;
-	top: 2247px;
-	width: 556px;
 }
 
-.homepage .video {
-	top: 3000px;
+.btn-custom-outline {
+    color: #FFFFFF; 
+    border-color: #FFFFFF; 
+	border-radius: 30px;
 }
+
+
+.row-container {
+	padding-right: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around; 
+	align-items: center; 
+  }
+
+.btn-custom-outline .bi-arrow-right-short {
+    margin-left: 10px; 
+}
+
+.bi-arrow-right-short {
+	color: #d7f379;
+}
+  
 
 .homepage .why-buy-a-fuel {
 	color: var(--primary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 64px;
 	font-weight: 400;
-	left: 0;
 	letter-spacing: 0;
 	line-height: normal;
-	position: absolute;
-	top: 1943px;
 }
 
 .homepage .text-wrapper-12 {
@@ -439,12 +445,9 @@ body {
 	font-family: "Rubik", Helvetica;
 	font-size: 64px;
 	font-weight: 400;
-	left: 0;
 	letter-spacing: 0;
 	line-height: normal;
-	position: absolute;
-	top: 2928px;
-	width: 460px;
+	padding-left: 70px;
 }
 
 .homepage .overlap-group-wrapper {
@@ -484,40 +487,17 @@ body {
 	left: 0;
 	letter-spacing: 0;
 	line-height: normal;
-	position: absolute;
-	top: 386px;
-	width: 451px;
 }
 
-.homepage .overlap-3 {
-	height: 37px;
-	left: 0;
-	position: absolute;
-	top: 500px;
-	width: 168px;
-}
 
-.homepage .rectangle {
-	border: 2px solid;
-	border-color: var(--secondary-color);
-	border-radius: 44px;
-	height: 38px;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 168px;
-}
 
 .homepage .text-wrapper-15 {
 	color: var(--secondary-color);
 	font-family: "Rubik", Helvetica;
 	font-size: 20px;
 	font-weight: 400;
-	left: 16px;
 	letter-spacing: 0;
 	line-height: normal;
-	position: absolute;
-	top: 6px;
 	white-space: nowrap;
 }
 
@@ -539,46 +519,6 @@ body {
 	transform: rotate(90deg);
 	width: 20px;
 }
-
-.homepage .rectangle-2 {
-	background-color: var(--background-color);
-	border-radius: 12px;
-	height: 3px;
-	left: 0;
-	position: absolute;
-	top: 7px;
-	width: 19px;
-}
-
-.homepage .rectangle-3 {
-	background-color: var(--background-color);
-	border-radius: 12px;
-	height: 3px;
-	left: 8px;
-	position: absolute;
-	top: 10px;
-	transform: rotate(-45deg);
-	width: 12px;
-}
-
-.homepage .rectangle-4 {
-	background-color: var(--background-color);
-	border-radius: 12px;
-	height: 3px;
-	left: 8px;
-	position: absolute;
-	top: 4px;
-	transform: rotate(45deg);
-	width: 12px;
-}
-
-.homepage .overlap-4 {
-	background-color: var(--background-color);
-	height: 106px;
-	position: relative;
-	width: 1512px;
-}
-
 /* Homepage End */
 
 
@@ -1749,6 +1689,7 @@ input[type="radio"] {
 }
 
 .homepage .div {
+	height: 100%;
 	background-color: #191f0c;
 	height: 4073px;
 	overflow: hidden;
@@ -1888,4 +1829,73 @@ input[type="radio"] {
 		width: 85%;		
 	}
 
+	.upper-section, .bottom-section {
+        width: 100%; /* Take up full width */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+		padding-right: 80px;
+		margin-top: 100px;
+    }
+
+	.homepage .drive-reduce  {
+		font-size: 50px;
+	}
+
+	.homepage .text-wrapper-14 {
+		font-size: 20px;
+	}
+
+	.homepage .why-should-you-care {
+		font-size: 40px;
+	}
+
+	.homepage .text-wrapper-10 {
+		font-size: 16px;
+	}
+	
+	.homepage .why-buy-a-fuel {
+		font-size: 40px;
+	}
+
+	.homepage .text-wrapper-11 {
+		font-size: 16px;
+	}
+
+	iframe {
+		width: 300px;
+		height: 200px;
+	}
+
+	.homepage .text-wrapper-12 {
+		font-size: 40px;
+		padding-left: 5%;
+	}
+
+	.row-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: stretch; /* Stretch items to fill the width */
+		
+    }
+
+	.row-container .button-link {
+		padding: 10px; /* Adjust the value as needed */
+	}
+	
+
+
+    .left-side {
+        width: 100%; 
+    }
+
+    
+    .left-side > *, .bottom-section > * {
+        text-align: left;
+    }
+
+	.overlap-2 {
+        display: none;
+    }
+
+	
 }
