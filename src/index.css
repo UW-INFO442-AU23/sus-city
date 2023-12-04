@@ -601,6 +601,7 @@ body {
 
 .compare {
 	min-height: 100vh;
+	overflow-x: hidden;
 }
 
 .compare .compare-heading {
@@ -692,6 +693,23 @@ body {
 	padding: 14rem 25rem;
 	font-size: 25pt;
 	white-space: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+    .compare-label {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .compare-label .dropdown,
+    .compare-label .compare-button,
+    .compare-label .clear-button {
+        width: 90%;
+    }
+
+	.compare-table {
+        width: 95%;
+    }
 }
 
 /** end of content css + start of about css **/

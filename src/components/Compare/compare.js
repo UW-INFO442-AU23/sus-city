@@ -46,6 +46,7 @@ export default function Compare(props) {
                 { property: 'Carbon Emissions', car1: `${filteredCars1.co2_emission} grams/mile`, car2: `${filteredCars2.co2_emission} grams/mile` },
                 { property: 'Apple CarPlay', car1: handleBoolean(filteredCars1.apple_carplay), car2: handleBoolean(filteredCars2.apple_carplay) },
                 { property: 'Keyless Entry', car1: handleBoolean(filteredCars1.keyless_entry), car2: handleBoolean(filteredCars2.keyless_entry) },
+                { property: 'Dynamic Cruise Control', car1: handleBoolean(filteredCars1.dynamic_cruise_control), car2: handleBoolean(filteredCars2.dynamic_cruise_control) },
                 { property: 'Dynamic Cruise Control', car1: handleBoolean(filteredCars1.dynamic_cruise_control), car2: handleBoolean(filteredCars2.dynamic_cruise_control) }
             ];
             setComparisonResult(comparedData);
@@ -94,7 +95,6 @@ export default function Compare(props) {
                             {carOptions}
                         </Form.Select>
                     </div>
-                
                     <Button variant="secondary" className="compare-button" onClick={handleCompare} disabled={!car1 || !car2}>
                         Apply Search
                     </Button>
