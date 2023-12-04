@@ -1054,7 +1054,7 @@ input[type="radio"] {
 	flex-direction: row;
 	justify-content: space-between;
 	height: 100vh;
-	margin: 0rem 5rem 0rem 7rem;
+	padding: 30% 5% 30% 5%;
 }
 
 .quiz-page .text-container {
@@ -1477,7 +1477,7 @@ input[type="radio"] {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
 }
 
 .type-solid-left-icon {
@@ -1768,7 +1768,7 @@ input[type="radio"] {
 	.quiz-page {
 		flex-direction: column-reverse;
 		margin: 0rem 0rem 0rem 0rem;
-		padding: 6rem 2rem 1rem 2rem;
+		padding: 3rem 2rem 8rem 2rem;
 		gap: 1rem;
 	}
 
