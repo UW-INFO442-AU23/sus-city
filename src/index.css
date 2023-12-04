@@ -1549,7 +1549,7 @@ input[type="radio"] {
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	padding: 6% 0 7% 0;
+	padding: 10% 0 7% 0;
 	gap: 50px;
 	color: white;
 }
@@ -1633,6 +1633,9 @@ input[type="radio"] {
 	border-radius: 5px;
 	display: inline-block;
 	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+	
 }
 
 .quiz-result .center-container {
