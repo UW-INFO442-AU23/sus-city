@@ -33,6 +33,8 @@ export default function Questionary(props){
   };
   const handlePrevious = () => {
     if (currentQuiz > 0) {
+      const newSelectedOptions = selectedOptions.slice(0, -1);
+      setSelectedOptions(newSelectedOptions);
       setCurrentQuiz(currentQuiz - 1);
     }
   };
